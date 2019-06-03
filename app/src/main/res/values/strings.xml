@@ -1,0 +1,145 @@
+<resources>
+
+    <string name="app_name">MyPA</string>
+    <string name="action_settings">Settings</string>
+    <string name="logged_in">Successfully Logged in with email</string>
+    <string name="logged_out">Please Login using following button</string>
+    <string name="Open">Google Sign In</string>
+    <string name="Close">Google Sign In</string>
+    <string name="title_activity_visiting">Visiting</string>
+    <string name="title_activity_passport_new">PassportNew</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="unlock">Unlock MyPA</string>
+    <string name="confirm_pattern">Confirm your screen lock PIN, Pattern or Password</string>
+    <string name="setting_label"><![CDATA[Please set the screen lock Manually by navigating to : Settings>Security.]]></string>
+    <string name="unlock_success">App is Unlocked successfully.</string>
+    <string name="unlock_failed">Failed to Unlock the app.</string>
+    <string name="device_is_secure">Device is now secure.</string>
+    <string name="security_device_cancelled">Device is not secure or user cancel the request.</string>
+    <string name="authenticate_again">Authenticate Again</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string-array name="banklist">
+        <item>"--Select your Bank--"</item>
+        <item>Andhra Bank</item>
+        <item>Allahabad Bank</item>
+        <item>Axis Bank</item>
+        <item>Bank of Bahrain and Kuwait</item>
+        <item>Bank of Baroda - Corporate Banking</item>
+        <item>Bank of Baroda - Retail Banking</item>
+        <item>Bank of India</item>
+        <item>Bank of Maharashtra</item>
+        <item>Canara Bank</item>
+        <item>Central Bank of India</item>
+        <item>City Union Bank</item>
+        <item>Corporation Bank</item>
+        <item>Deutsche Bank</item>
+        <item>Development Credit Bank</item>
+        <item>Dhanlaxmi Bank</item>
+        <item>Federal Bank</item>
+        <item>ICICI Bank</item>
+        <item>IDBI Bank</item>
+        <item>Indian Bank</item>
+        <item>Indian Overseas Bank</item>
+        <item>IndusInd Bank</item>
+        <item>ING Vysya Bank</item>
+        <item>Jammu and Kashmir Bank</item>
+        <item>Karnataka Bank Ltd</item>
+        <item>Karur Vysya Bank</item>
+        <item>Kotak Bank</item>
+        <item>Laxmi Vilas Bank</item>
+        <item>Oriental Bank of Commerce</item>
+        <item>Punjab National Bank - Corporate Banking</item>
+        <item>Punjab National Bank - Retail Banking</item>
+        <item>Punjab and Sind Bank</item>
+        <item>Shamrao Vitthal Co-operative Bank</item>
+        <item>South Indian Bank</item>
+        <item>State Bank of India</item>
+        <item>Syndicate Bank</item>
+        <item>Tamilnad Mercantile Bank Ltd.</item>
+        <item>UCO Bank</item>
+        <item>Union Bank of India</item>
+        <item>United Bank of India</item>
+        <item>Vijaya Bank</item>
+        <item>Yes Bank Ltd</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>--Select Card Type--</item>
+        <item>VISA</item>
+        <item>RuPay</item>
+        <item>Maestro</item>
+        <item>Mastercard</item>
+    </string-array>
+    <string-array name="debitcredit">
+        <item>--Select Card--</item>
+        <item>Debit Card</item>
+        <item>Credit Card</item>
+    </string-array>
+    <string-array name="socialsites">
+        <item>--Select Company Name--</item>
+        <item>Facebook</item>
+        <item>Instagram</item>
+        <item>Twitter</item>
+        <item>Snapchat</item>
+        <item>LinkedIn</item>
+        <item>Google+</item>
+    </string-array>
+    <string-array name="months">
+        <item>--Select Month--</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="uploadImages">
+        <item>Pick from gallery</item>
+        <item>Click from camera</item>
+        <item>Remove image</item>
+    </string-array>
+
+    <string-array name="itemIds">
+        <item>gallery_image</item>
+        <item>camera_image</item>
+        <item>remove_image</item>
+    </string-array>
+    <string-array name="passport">
+        <item>Passport Number</item>
+        <item>Name</item>
+    </string-array>
+    <string-array name="voterid">
+        <item>Voter ID Number</item>
+        <item>Name</item>
+        <item>"Father's Name"</item>
+        <item>Date of Birth</item>
+        <item>Address</item>
+    </string-array>
+
+    <string name="uploadImages">Set your image</string>
+    <string name="action_pic">Pictures</string>
+    <string name="title_activity_front">ActivityFront</string>
+
+    <string name="FACEBOOK_APP_ID">1102178923302580</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">9d0b947a20dca44290d2575b71999369</string>
+
+</resources>

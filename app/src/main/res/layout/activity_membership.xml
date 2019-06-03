@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/addback"
+    android:elevation="12dp"
+    android:orientation="vertical"
+    tools:context=".Membership">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Name of the Organization"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" *"
+        android:layout_marginTop="20dp"
+        android:textColor="#FF0000" />
+</LinearLayout>
+
+    <EditText
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:digits="abcdefghijklmnopqrstuvwx yzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Membership Holder"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" *"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+    <EditText
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:digits="abcdefghijklmnopqrstuvwx yzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:id="@+id/nameofholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Membership Number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" *"
+        android:textColor="#FF0000" />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/number"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Expiry"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/expiry"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pickmember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick" />
+    </LinearLayout>
+
+</LinearLayout>

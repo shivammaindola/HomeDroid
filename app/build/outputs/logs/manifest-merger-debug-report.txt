@@ -1,0 +1,1175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\da947edac70270b803a8fe72300a1ceb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\6d5c575178a204183c4431ec802c96a0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:21:1-55:12
+MERGED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.4.5] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b944b4626d264c6a00a9426e39c05a7e\AndroidManifest.xml:2:1-15:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4a5268ebe52be2a4263d215411235d3f\AndroidManifest.xml:6:1-16:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d742ffe3b45ea82fadbb9e147b2ab3e7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:17:1-42:12
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d76ca60890b9fb4aa5da2227ef72525b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d0da779547710eb9b4a28b0b2422045f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b847457a0da8ef1e2c4646d9102816e8\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\5b6dc6997e2bab51cf3ff84addb2c8cf\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cd8646f63e341f9e2ff2f5feda7a5a52\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e1f61beb16d86e866dc153392631c9f0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\71c291603e17999f5a5dd6e3f8f4f052\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1f09208c991b81c649ca750fe9518a94\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\06de67484730be5066f7a9e1a5acf55f\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f31d97fa77b8f4b03a2994b3c6180601\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\57053255096f8cd48bb1951295686d3e\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b21e259ccb2a6688ae70138a989cdebc\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4f0ee56d8af8675af3ece6a6f737d291\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\a6fa12e91119507c6d4d9d6975d57c3c\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:17:1-28:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f64bf3702d9cdbdb99cec22d9e03f766\AndroidManifest.xml:2:1-11:12
+MERGED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:2:1-17:12
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:17:1-30:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+	package
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:15-55
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:5-247:12
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:3:56-114
+uses-feature#android.hardware.camera2
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:5:5-84
+	android:required
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:5:19-42
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:5:43-82
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:9:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:11:22-63
+application
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:5-245:15
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\6d5c575178a204183c4431ec802c96a0\AndroidManifest.xml:11:5-20
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\6d5c575178a204183c4431ec802c96a0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:28:5-53:19
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:28:5-53:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.afollestad.material-dialogs:core:0.9.4.5] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b944b4626d264c6a00a9426e39c05a7e\AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.4.5] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b944b4626d264c6a00a9426e39c05a7e\AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d742ffe3b45ea82fadbb9e147b2ab3e7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d742ffe3b45ea82fadbb9e147b2ab3e7\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:23:5-40:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d76ca60890b9fb4aa5da2227ef72525b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d76ca60890b9fb4aa5da2227ef72525b\AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b847457a0da8ef1e2c4646d9102816e8\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b847457a0da8ef1e2c4646d9102816e8\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e1f61beb16d86e866dc153392631c9f0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e1f61beb16d86e866dc153392631c9f0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\71c291603e17999f5a5dd6e3f8f4f052\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\71c291603e17999f5a5dd6e3f8f4f052\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1f09208c991b81c649ca750fe9518a94\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1f09208c991b81c649ca750fe9518a94\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\06de67484730be5066f7a9e1a5acf55f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\06de67484730be5066f7a9e1a5acf55f\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f31d97fa77b8f4b03a2994b3c6180601\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f31d97fa77b8f4b03a2994b3c6180601\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\57053255096f8cd48bb1951295686d3e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\57053255096f8cd48bb1951295686d3e\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b21e259ccb2a6688ae70138a989cdebc\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b21e259ccb2a6688ae70138a989cdebc\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4f0ee56d8af8675af3ece6a6f737d291\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4f0ee56d8af8675af3ece6a6f737d291\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\a6fa12e91119507c6d4d9d6975d57c3c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\a6fa12e91119507c6d4d9d6975d57c3c\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:22:5-26:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f64bf3702d9cdbdb99cec22d9e03f766\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f64bf3702d9cdbdb99cec22d9e03f766\AndroidManifest.xml:9:5-20
+MERGED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:11:5-15:19
+MERGED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:11:5-15:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:50-76
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:116-148
+	android:roundIcon
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:77-115
+	android:allowBackup
+		ADDED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:149-182
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:14:18-49
+meta-data#com.facebook.accountkit.ApplicationName
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:16:5-18:44
+	android:value
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:18:9-41
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:17:9-63
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:19:5-21:51
+	android:value
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:21:9-48
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:20:9-54
+meta-data#com.facebook.accountkit.ClientToken
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:22:5-24:60
+	android:value
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:24:9-57
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:23:9-59
+activity#com.facebook.accountkit.ui.AccountKitActivity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:26:5-78
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:29:9-34:58
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:29:9-34:58
+	android:label
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:31:13-65
+	android:launchMode
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:32:13-43
+	android:windowSoftInputMode
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:34:13-55
+	android:theme
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:33:13-52
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:26:15-75
+meta-data#com.facebook.accountkit.FacebookAppEventsEnabled
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:28:5-30:33
+	android:value
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:30:9-30
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:29:9-72
+activity#com.example.sneha.googlesignin.HomeActivity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:32:5-46
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:32:15-43
+activity#com.example.sneha.googlesignin.LoginActivity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:33:9-51
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:33:19-48
+activity#com.example.sneha.googlesignin.ActivityFront
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:35:5-135
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:35:89-133
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:35:45-88
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:35:15-44
+activity#com.example.sneha.googlesignin.DisplayDrivingLisence
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:37:5-54
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:37:15-52
+activity#com.example.sneha.googlesignin.DisplayDrivingLicense
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:39:5-54
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:39:15-52
+activity#com.example.sneha.googlesignin.DrivingLicense1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:41:5-118
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:41:78-116
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:41:47-77
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:41:15-46
+activity#com.example.sneha.googlesignin.EditDrivingLicense
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:43:5-90
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:43:50-88
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:43:15-49
+activity#com.example.sneha.googlesignin.DrivingLicense
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:45:5-86
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:45:46-84
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:45:15-45
+activity#com.example.sneha.googlesignin.DebitCredit
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:47:5-44
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:47:15-42
+activity#com.example.sneha.googlesignin.CardName
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:49:5-41
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:49:15-39
+activity#com.example.sneha.googlesignin.BankName
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:51:5-41
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:51:15-39
+activity#com.example.sneha.googlesignin.UnderDevelopment
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:53:5-49
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:53:15-47
+activity#com.example.sneha.googlesignin.EditSocial
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:55:5-43
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:55:15-41
+activity#com.example.sneha.googlesignin.MainActivity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:58:5-71:12
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:58:44-75
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:58:15-43
+intent-filter#action:name:android.intent.action.MAIN+action:name:android.intent.action.VIEW+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:61:5-69:17
+action#android.intent.action.MAIN
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:63:5-56
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:63:13-54
+action#android.intent.action.VIEW
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:65:5-56
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:65:13-54
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:67:5-64
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:67:15-62
+receiver#com.example.sneha.googlesignin.AlarmReceiver
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:74:5-83:12
+	android:enabled
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:74:45-67
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:74:15-44
+intent-filter#action:name:com.example.sneha.googlesignin
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:77:5-81:17
+action#com.example.sneha.googlesignin
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:79:5-60
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:79:13-58
+activity#com.example.sneha.googlesignin.allap
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:85:5-38
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:85:15-36
+activity#com.example.sneha.googlesignin.allsensitive
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:87:5-45
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:87:15-43
+activity#com.example.sneha.googlesignin.Passport
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:89:5-104
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:89:71-102
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:89:40-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:89:15-39
+activity#com.example.sneha.googlesignin.voterid
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:91:5-72
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:91:39-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:91:15-38
+activity#com.example.sneha.googlesignin.pancard
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:93:5-72
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:93:39-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:93:15-38
+activity#com.example.sneha.googlesignin.DisplaySystemDetail
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:95:5-88
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:95:51-86
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:95:15-50
+activity#com.example.sneha.googlesignin.EditSystemLogins
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:97:5-85
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:97:48-83
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:97:15-47
+activity#com.example.sneha.googlesignin.SystemLogins1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:99:5-113
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:99:76-111
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:99:45-75
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:99:15-44
+activity#com.example.sneha.googlesignin.SystemLogin
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:101:5-80
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:101:43-78
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:101:15-42
+activity#com.example.sneha.googlesignin.aadhar
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:103:5-70
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:103:38-68
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:103:15-37
+activity#com.example.sneha.googlesignin.Banking_card
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:105:5-81
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:105:44-79
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:105:15-43
+activity#com.example.sneha.googlesignin.Account_details
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:107:5-84
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:107:47-82
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:107:15-46
+activity#com.example.sneha.googlesignin.Membership
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:109:5-77
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:109:42-75
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:109:15-41
+activity#com.example.sneha.googlesignin.Wifipass
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:111:5-71
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:111:40-69
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:111:15-39
+activity#com.example.sneha.googlesignin.Other
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:113:5-98
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:113:68-96
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:113:37-67
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:113:15-36
+activity#com.example.sneha.googlesignin.Remainder
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:115:5-42
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:115:15-40
+activity#com.example.sneha.googlesignin.PurchaseList
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:117:5-76
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:117:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:117:15-43
+activity#com.example.sneha.googlesignin.Bussiness
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:119:5-73
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:119:41-71
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:119:15-40
+activity#com.example.sneha.googlesignin.StickyNotes
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:121:5-75
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:121:43-73
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:121:15-42
+activity#com.example.sneha.googlesignin.Evisiting
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:123:5-42
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:123:15-40
+activity#com.example.sneha.googlesignin.TodoNew
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:125:5-40
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:125:15-38
+activity#com.example.sneha.googlesignin.NoteEditorActivity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:127:5-82
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:127:50-80
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:127:15-49
+activity#com.example.sneha.googlesignin.NoteEditorActivity1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:129:5-83
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:129:51-81
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:129:15-50
+activity#com.example.sneha.googlesignin.SocialSites
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:131:5-85
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:131:43-83
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:131:15-42
+activity#com.example.sneha.googlesignin.Mail
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:133:5-74
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:133:36-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:133:15-35
+activity#com.example.sneha.googlesignin.OnlineSites
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:135:5-82
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:135:43-80
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:135:15-42
+activity#com.example.sneha.googlesignin.Site1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:137:5-38
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:137:15-36
+activity#com.example.sneha.googlesignin.StdCode
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:139:5-40
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:139:15-38
+activity#com.example.sneha.googlesignin.BussinessContact
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:141:5-49
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:141:15-47
+activity#com.example.sneha.googlesignin.Passport1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:143:5-74
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:143:41-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:143:15-40
+activity#com.example.sneha.googlesignin.DislayPassportDetail
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:145:5-85
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:145:52-83
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:145:15-51
+activity#com.example.sneha.googlesignin.EditPassport
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:147:5-77
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:147:44-75
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:147:15-43
+activity#com.example.sneha.googlesignin.voterid1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:149:5-104
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:149:71-102
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:149:40-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:149:15-39
+activity#com.example.sneha.googlesignin.DisplayVoterDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:151:5-84
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:151:51-82
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:151:15-50
+activity#com.example.sneha.googlesignin.EditVoter
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:153:5-74
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:153:41-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:153:15-40
+activity#com.example.sneha.googlesignin.pancard1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:155:5-104
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:155:71-102
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:155:40-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:155:15-39
+activity#com.example.sneha.googlesignin.DisplayPanDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:157:5-82
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:157:49-80
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:157:15-48
+activity#com.example.sneha.googlesignin.EditPan
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:159:5-72
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:159:39-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:159:15-38
+activity#com.example.sneha.googlesignin.aadhar1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:161:5-102
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:161:70-100
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:161:39-69
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:161:15-38
+activity#com.example.sneha.googlesignin.DisplayAadharDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:163:5-84
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:163:52-82
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:163:15-51
+activity#com.example.sneha.googlesignin.EditAadhar
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:165:5-74
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:165:42-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:165:15-41
+activity#com.example.sneha.googlesignin.membership1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:167:5-109
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:167:74-107
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:167:43-73
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:167:15-42
+activity#com.example.sneha.googlesignin.DisplayMembershipDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:169:5-91
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:169:56-89
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:169:15-55
+activity#com.example.sneha.googlesignin.EditMember
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:171:5-77
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:171:42-75
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:171:15-41
+activity#com.example.sneha.googlesignin.Wifipass1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:173:5-102
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:173:72-100
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:173:41-71
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:173:15-40
+activity#com.example.sneha.googlesignin.DisplayWifi
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:175:5-73
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:175:43-71
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:175:15-42
+activity#com.example.sneha.googlesignin.EditWifi
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:177:5-70
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:177:40-68
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:177:15-39
+activity#com.example.sneha.googlesignin.SocialSites1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:179:5-117
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:179:75-115
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:179:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:179:15-43
+activity#com.example.sneha.googlesignin.DisplaySocial
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:181:5-87
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:181:45-85
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:181:15-44
+activity#com.example.sneha.googlesignin.Mail1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:183:5-106
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:183:68-104
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:183:37-67
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:183:15-36
+activity#com.example.sneha.googlesignin.DisplayMailDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:185:5-88
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:185:50-86
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:185:15-49
+activity#com.example.sneha.googlesignin.EditMail
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:187:5-78
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:187:40-76
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:187:15-39
+activity#com.example.sneha.googlesignin.OnlineSites1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:189:5-114
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:189:75-112
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:189:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:189:15-43
+activity#com.example.sneha.googlesignin.DisplayOnlineDetails
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:191:5-91
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:191:52-89
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:191:15-51
+activity#com.example.sneha.googlesignin.EditOnline
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:193:5-81
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:193:42-79
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:193:15-41
+activity#com.example.sneha.googlesignin.Insurance
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:195:5-75
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:195:41-73
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:195:15-40
+activity#com.example.sneha.googlesignin.Insurance1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:197:5-107
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:197:73-105
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:197:42-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:197:15-41
+activity#com.example.sneha.googlesignin.DisplayInsurance
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:199:5-82
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:199:48-80
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:199:15-47
+activity#com.example.sneha.googlesignin.EditInsurance
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:201:5-79
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:201:45-77
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:201:15-44
+activity#com.example.sneha.googlesignin.BankingCard1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:203:5-112
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:203:75-110
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:203:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:203:15-43
+activity#com.example.sneha.googlesignin.DisplayBanking
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:205:5-83
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:205:46-81
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:205:15-45
+activity#com.example.sneha.googlesignin.EditBanking
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:207:5-80
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:207:43-78
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:207:15-42
+activity#com.example.sneha.googlesignin.Account1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:209:5-108
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:209:71-106
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:209:40-70
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:209:15-39
+activity#com.example.sneha.googlesignin.DisplayAccount
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:211:5-83
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:211:46-81
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:211:15-45
+activity#com.example.sneha.googlesignin.EditAccount
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:213:5-80
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:213:43-78
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:213:15-42
+activity#com.example.sneha.googlesignin.EditRemoteLogin
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:215:5-84
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:215:47-82
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:215:15-46
+activity#com.example.sneha.googlesignin.DisplayRemoteDetail
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:217:5-88
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:217:51-86
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:217:15-50
+activity#com.example.sneha.googlesignin.RemoteLogin
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:219:5-80
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:219:43-78
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:219:15-42
+activity#com.example.sneha.googlesignin.RemoteLogin1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:221:5-112
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:221:75-110
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:221:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:221:15-43
+activity#com.example.sneha.googlesignin.NoteEditorActivity2
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:223:5-52
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:223:15-50
+activity#com.example.sneha.googlesignin.RemainderHome
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:225:5-46
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:225:15-44
+activity#com.example.sneha.googlesignin.ButtonPage1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:227:5-44
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:227:15-42
+activity#com.example.sneha.googlesignin.EditElectricity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:229:5-83
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:229:47-81
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:229:15-46
+activity#com.example.sneha.googlesignin.DisplayElectricity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:231:5-86
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:231:50-84
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:231:15-49
+activity#com.example.sneha.googlesignin.Electricity1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:233:5-111
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:233:75-109
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:233:44-74
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:233:15-43
+activity#com.example.sneha.googlesignin.DisplayGas
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:235:5-81
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:235:42-79
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:235:15-41
+activity#com.example.sneha.googlesignin.Electricity
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:237:5-79
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:237:43-77
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:237:15-42
+activity#com.example.sneha.googlesignin.EditGas
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:239:5-78
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:239:39-76
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:239:15-38
+activity#com.example.sneha.googlesignin.Gas
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:241:5-74
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:241:35-72
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:241:15-34
+activity#com.example.sneha.googlesignin.Gas1
+ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:243:5-106
+	android:label
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:243:67-104
+	android:theme
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:243:36-66
+	android:name
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml:243:15-35
+uses-sdk
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\da947edac70270b803a8fe72300a1ceb\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\da947edac70270b803a8fe72300a1ceb\AndroidManifest.xml:20:5-43
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\6d5c575178a204183c4431ec802c96a0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.miguelcatalan:materialsearchview:1.4.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\6d5c575178a204183c4431ec802c96a0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:21:5-23:62
+MERGED from [com.afollestad.material-dialogs:core:0.9.4.5] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b944b4626d264c6a00a9426e39c05a7e\AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.4.5] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b944b4626d264c6a00a9426e39c05a7e\AndroidManifest.xml:8:5-11:75
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4a5268ebe52be2a4263d215411235d3f\AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4a5268ebe52be2a4263d215411235d3f\AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d742ffe3b45ea82fadbb9e147b2ab3e7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d742ffe3b45ea82fadbb9e147b2ab3e7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:21:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d76ca60890b9fb4aa5da2227ef72525b\AndroidManifest.xml:21:5-23:55
+MERGED from [com.android.support:support-v13:25.3.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d76ca60890b9fb4aa5da2227ef72525b\AndroidManifest.xml:21:5-23:55
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d0da779547710eb9b4a28b0b2422045f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d0da779547710eb9b4a28b0b2422045f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b847457a0da8ef1e2c4646d9102816e8\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b847457a0da8ef1e2c4646d9102816e8\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\5b6dc6997e2bab51cf3ff84addb2c8cf\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\5b6dc6997e2bab51cf3ff84addb2c8cf\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cd8646f63e341f9e2ff2f5feda7a5a52\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cd8646f63e341f9e2ff2f5feda7a5a52\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e1f61beb16d86e866dc153392631c9f0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e1f61beb16d86e866dc153392631c9f0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\71c291603e17999f5a5dd6e3f8f4f052\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\71c291603e17999f5a5dd6e3f8f4f052\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1f09208c991b81c649ca750fe9518a94\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1f09208c991b81c649ca750fe9518a94\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\06de67484730be5066f7a9e1a5acf55f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\06de67484730be5066f7a9e1a5acf55f\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f31d97fa77b8f4b03a2994b3c6180601\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f31d97fa77b8f4b03a2994b3c6180601\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\57053255096f8cd48bb1951295686d3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\57053255096f8cd48bb1951295686d3e\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b21e259ccb2a6688ae70138a989cdebc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b21e259ccb2a6688ae70138a989cdebc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4f0ee56d8af8675af3ece6a6f737d291\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4f0ee56d8af8675af3ece6a6f737d291\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\a6fa12e91119507c6d4d9d6975d57c3c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\a6fa12e91119507c6d4d9d6975d57c3c\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f64bf3702d9cdbdb99cec22d9e03f766\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\f64bf3702d9cdbdb99cec22d9e03f766\AndroidManifest.xml:5:5-7:41
+MERGED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:7:5-9:41
+MERGED from [me.anwarshahriar:calligrapher:1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ea57a715da13016bfc0f40530013596b\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\src\main\AndroidManifest.xml
+activity#com.facebook.accountkit.ui.AccountKitEmailRedirectActivity
+ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:35:9-38:40
+	android:noHistory
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:38:13-37
+	android:exported
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:37:13-36
+	android:name
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:36:13-86
+provider#com.facebook.accountkit.internal.AccountKitInitProvider
+ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:49:9-52:40
+	android:authorities
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:51:13-76
+	android:exported
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:52:13-37
+	android:name
+		ADDED from [com.facebook.android:account-kit-sdk:5.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d3432777d1427cef094c7aa13b2e8a99\AndroidManifest.xml:50:13-83
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\570cab092de2d99228e1e45b677f1e11\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ff7108ab0d7e2e2cb3b4787795e95b91\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\db3667b3bfafbbc00ecf1ddbdc6bd29a\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d4a3cda034ee084eae0ca2cce651a2b4\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\934e22e6ea2f4d11971af938e2a43ab1\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\9f6ed87890dbde8f4320b09bcfa3711e\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2f4668d2b0eeb19eaa86126fab2eb082\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\e8e1ae0beb5d5466b3a9a391d39e8dcb\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\d5a8d735d19ced4db9622818191c5cbe\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c51bed735b93e3f77b1e25cf379ad456\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ee88859eb15178301aaf130f12cce27a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ec02ed0d6d88be34bc7a231684d08651\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4e480e36b34309e52de8dfa4ffaff17e\AndroidManifest.xml:27:13-51
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\4997135d14b6b233fd88ac7058ebc24a\AndroidManifest.xml:37:17-109
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\1d8ea6d160dae72d61b23bfb5afc3405\AndroidManifest.xml:34:13-89
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:22:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:23:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\c3f059fe4ffa887223e784bc9cd3f775\AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.1.2] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\ef55df8e0173b3b076dfe6cb0200b892\AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\075103d850220b66e7e6c093d9b92009\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:17.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\cf13b5c5f7b14a03d0a81fbe608580c4\AndroidManifest.xml:13:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\b9cfb4e1ade2cdd76cc75e7500f7ffee\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\22cbb18bf4128a45ec6122d963a1d082\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.5.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\205898afba8141a0e44256dc9d1a1a8d\AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\2e93d43ccae25d2248d9d1b8e7e6c2f0\AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\SHIVAM MAINDOLA\.gradle\caches\transforms-2\files-2.1\442401973efb34510a23e06ca631b067\AndroidManifest.xml:26:13-58

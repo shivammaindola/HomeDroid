@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/Cambria</item>
+        <item name="android:listViewStyle">@style/Cambria</item>
+        <item name="android:fontFamily">@font/cambria</item>
+    </style>
+
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textViewStyle">@style/Cambria</item>
+        <item name="android:listViewStyle">@style/Cambria</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:fontFamily">@font/cambria</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Cambriatextview" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@fonts/my</item>
+    </style>
+
+    <style name="Cambria">
+        <item name="android:fontFamily">@font/cambria</item>
+    </style>
+
+    <style name="Allura">
+        <item name="android:fontFamily">@fonts/Allura-Regular</item>
+    </style>
+</resources>

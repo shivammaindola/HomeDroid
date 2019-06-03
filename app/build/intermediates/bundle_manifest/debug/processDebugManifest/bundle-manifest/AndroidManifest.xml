@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sneha.googlesignin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/download"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:label="@string/com_accountkit_button_log_in"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AccountKit"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
+
+        <activity android:name="com.example.sneha.googlesignin.HomeActivity" />
+        <activity android:name="com.example.sneha.googlesignin.LoginActivity" />
+        <activity
+            android:name="com.example.sneha.googlesignin.ActivityFront"
+            android:label="@string/title_activity_front"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.sneha.googlesignin.DisplayDrivingLisence" />
+        <activity android:name="com.example.sneha.googlesignin.DisplayDrivingLicense" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DrivingLicense1"
+            android:label="MyPA : Driving License"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditDrivingLicense"
+            android:label="MyPA : Driving License" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DrivingLicense"
+            android:label="MyPA : Driving License" />
+        <activity android:name="com.example.sneha.googlesignin.DebitCredit" />
+        <activity android:name="com.example.sneha.googlesignin.CardName" />
+        <activity android:name="com.example.sneha.googlesignin.BankName" />
+        <activity android:name="com.example.sneha.googlesignin.UnderDevelopment" />
+        <activity android:name="com.example.sneha.googlesignin.EditSocial" />
+        <activity
+            android:name="com.example.sneha.googlesignin.MainActivity"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.example.sneha.googlesignin.AlarmReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.example.sneha.googlesignin" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.sneha.googlesignin.allap" />
+        <activity android:name="com.example.sneha.googlesignin.allsensitive" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Passport"
+            android:label="MyPA : Passport"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.voterid"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name="com.example.sneha.googlesignin.pancard"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplaySystemDetail"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditSystemLogins"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.SystemLogins1"
+            android:label="MyPA : System Login"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.SystemLogin"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.aadhar"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Banking_card"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Account_details"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Membership"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Wifipass"
+            android:label="MyPA : Wi-Fi " />
+        <activity
+            android:name="com.example.sneha.googlesignin.Other"
+            android:label="MyPA : Other"
+            android:theme="@style/MyTheme" />
+        <activity android:name="com.example.sneha.googlesignin.Remainder" />
+        <activity
+            android:name="com.example.sneha.googlesignin.PurchaseList"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Bussiness"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.StickyNotes"
+            android:theme="@style/MyTheme" />
+        <activity android:name="com.example.sneha.googlesignin.Evisiting" />
+        <activity android:name="com.example.sneha.googlesignin.TodoNew" />
+        <activity
+            android:name="com.example.sneha.googlesignin.NoteEditorActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.NoteEditorActivity1"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.SocialSites"
+            android:label="MyPA : Social Networking" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Mail"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.OnlineSites"
+            android:label="MyPA : Online Account" />
+        <activity android:name="com.example.sneha.googlesignin.Site1" />
+        <activity android:name="com.example.sneha.googlesignin.StdCode" />
+        <activity android:name="com.example.sneha.googlesignin.BussinessContact" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Passport1"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DislayPassportDetail"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditPassport"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name="com.example.sneha.googlesignin.voterid1"
+            android:label="MyPA : Voter ID"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayVoterDetails"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditVoter"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name="com.example.sneha.googlesignin.pancard1"
+            android:label="MyPA : PAN Card"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayPanDetails"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditPan"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.aadhar1"
+            android:label="MyPA : Aadhaar"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayAadharDetails"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditAadhar"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name="com.example.sneha.googlesignin.membership1"
+            android:label="MyPA : Membership"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayMembershipDetails"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditMember"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Wifipass1"
+            android:label="MyPA : Wi-Fi"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayWifi"
+            android:label="MyPA : Wi-Fi" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditWifi"
+            android:label="MyPA : Wi-Fi" />
+        <activity
+            android:name="com.example.sneha.googlesignin.SocialSites1"
+            android:label="MyPA : Social Networking"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplaySocial"
+            android:label="MyPA : Social Networking" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Mail1"
+            android:label="MyPA : Email Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayMailDetails"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditMail"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.OnlineSites1"
+            android:label="MyPA : Online Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayOnlineDetails"
+            android:label="MyPA : Online Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditOnline"
+            android:label="MyPA : Online Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Insurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Insurance1"
+            android:label="MyPA : Insurance"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayInsurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditInsurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name="com.example.sneha.googlesignin.BankingCard1"
+            android:label="MyPA : Banking Card"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayBanking"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditBanking"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Account1"
+            android:label="MyPA : Bank Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayAccount"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditAccount"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditRemoteLogin"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayRemoteDetail"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.RemoteLogin"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name="com.example.sneha.googlesignin.RemoteLogin1"
+            android:label="MyPA : Remote Login"
+            android:theme="@style/MyTheme" />
+        <activity android:name="com.example.sneha.googlesignin.NoteEditorActivity2" />
+        <activity android:name="com.example.sneha.googlesignin.RemainderHome" />
+        <activity android:name="com.example.sneha.googlesignin.ButtonPage1" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditElectricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayElectricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Electricity1"
+            android:label="MyPA : Electricity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.example.sneha.googlesignin.DisplayGas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Electricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name="com.example.sneha.googlesignin.EditGas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Gas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name="com.example.sneha.googlesignin.Gas1"
+            android:label="MyPA : Gas Connection"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <!--
+             The initialization ContentProvider will call AccountKit.initialize automatically
+             with the application context. This config is merged in with the host app's manifest,
+             but there can only be one provider with the same authority activated at any given
+             point; so if the end user has two or more different apps that use AccountKit, only the
+             first one will be able to use the provider. To work around this problem, we use the
+             following placeholder in the authority to identify each host application as if it was
+             a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.accountkit.internal.AccountKitInitProvider"
+            android:authorities="com.example.sneha.googlesignin.AccountKitInitialization"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseInstanceIdService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.sneha.googlesignin.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.sneha.googlesignin.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

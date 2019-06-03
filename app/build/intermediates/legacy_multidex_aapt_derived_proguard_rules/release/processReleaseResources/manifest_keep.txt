@@ -1,0 +1,2 @@
+# Referenced at C:\Users\SHIVAM MAINDOLA\AndroidStudioProjects\Internship\GooglesignIn\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:28
+-keep class android.support.multidex.MultiDexApplication { <init>(); }

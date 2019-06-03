@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addback"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:elevation="12dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:text="Name of the Bank"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF0000" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bank"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center">
+
+            </Spinner>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/bankview"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Account Number"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="370dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Holder Name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/holder"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqrs tuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/ifsc"
+            android:layout_width="370dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominee Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nominee"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopq rstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Relation with Nominee"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/relation"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:digits="abcdefghijklmnopqr stuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Profile Password"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/profile"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/pass_show"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foregroundGravity="left"
+                app:srcCompat="@drawable/pass_show" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

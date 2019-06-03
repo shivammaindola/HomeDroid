@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\SHIVAM MAINDOLA\\AndroidStudioProjects\\Internship\\GooglesignIn\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SHIVAM MAINDOLA\\.gradle\\caches\\transforms-2\\files-2.1\\b944b4626d264c6a00a9426e39c05a7e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,51",
+                        "endOffsets": "92,144"
+                    },
+                    "to": {
+                        "startLines": "2,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,1212",
+                        "endColumns": "41,51",
+                        "endOffsets": "92,1259"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SHIVAM MAINDOLA\\.gradle\\caches\\transforms-2\\files-2.1\\4e480e36b34309e52de8dfa4ffaff17e\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
+                        "endLines": "2,3,4,5,6,7,8,9,10,14",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14,15,16,17,18,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "653,713,783,854,926,984,1042,1148,1264,1327",
+                        "endLines": "11,12,13,14,15,16,17,18,20,24",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "708,778,849,921,979,1037,1143,1207,1322,1504"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SHIVAM MAINDOLA\\.gradle\\caches\\transforms-2\\files-2.1\\570cab092de2d99228e1e45b677f1e11\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "97,166,235,305,379,455,514,585",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "161,230,300,374,450,509,580,648"
+                    }
+                }
+            ]
+        }
+    ]
+}
