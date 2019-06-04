@@ -71,7 +71,7 @@ public class EditWifi extends AppCompatActivity {
         myDb = new DatabaseHelper7(this);
         adapterClass1 = new AdapterClassWifi(Wifipass1.wifinamelist, Wifipass1.wifipasslist, EditWifi.this);
         pass_show = (ImageView)findViewById(R.id.pass_show);
-        //wifiId = (EditText)findViewById(R.id.wifi_id);
+        wifiId = (EditText)findViewById(R.id.wifi_id);
 
         pass_show.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -49,7 +49,7 @@ public class DisplayWifi extends AppCompatActivity {
         calligrapher.setFont(this,"cambria.ttf",true);
         t1=(TextView)findViewById(R.id.wifiname);
         t2=(TextView)findViewById(R.id.wifipass);
-        //t3=(TextView)findViewById(R.id.wifiid);
+        t3=(TextView)findViewById(R.id.wifiid);
         DatabaseHelper7 dataHelper=new DatabaseHelper7(this);
 
 

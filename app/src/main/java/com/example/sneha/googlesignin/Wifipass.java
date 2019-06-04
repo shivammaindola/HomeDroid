@@ -71,7 +71,7 @@ public class Wifipass extends AppCompatActivity {
         name=(EditText)findViewById(R.id.name);
         pass=(EditText)findViewById(R.id.pass);
         pass_show = (ImageView)findViewById(R.id.pass_show);
-        //wifiId = (EditText)findViewById(R.id.wifi_id);
+        wifiId = (EditText)findViewById(R.id.wifi_id);
 
         pass_show.setOnClickListener(new View.OnClickListener() {
             @Override
