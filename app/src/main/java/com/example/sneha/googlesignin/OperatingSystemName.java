@@ -39,6 +39,7 @@ public class OperatingSystemName extends AppCompatActivity {
         os.add(new OperatingSystemList("Windows 2000", R.drawable.windows_2000));
         os.add(new OperatingSystemList("Windows Vista", R.drawable.windows_vista));
         os.add(new OperatingSystemList("Windows XP", R.drawable.windows_xp));
+        os.add(new OperatingSystemList("Windows Server", R.drawable.windows_8));
 
         adapter = new OperatingSystemAdapter(this, os);
         listView.setAdapter(adapter);
