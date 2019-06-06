@@ -12,43 +12,72 @@
         android:elevation="12dp"
         android:layout_margin="15dp"
         android:background="@drawable/addback"
-        tools:context=".EditDrivingLicense">
+        tools:context=".SystemLogin">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:orientation="horizontal">
+            android:layout_marginRight="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Name of DL Holder"
+                android:layout_marginTop="15dp"
+                android:text="System Name"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginTop="15dp"
                 android:text=" *"
-                android:textColor="#FF0000"
-                android:textSize="14sp" />
+                android:textColor="#FF0000" />
         </LinearLayout>
 
         <EditText
             android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:imeOptions="actionNext"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:singleLine="true"
-            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Operating System"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=" *"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/pickOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -60,29 +89,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Driving License Number"
+                android:text="Username"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text=" *"
-                android:textColor="#FF0000"
-                android:textSize="14sp" />
+                android:textColor="#FF0000" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/number"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:imeOptions="actionNext"
-            android:inputType="textCapCharacters"
-            android:maxLength="16" />
+            android:inputType="text"
+            android:singleLine="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -94,18 +120,17 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Date of Issue"
+                android:layout_marginTop="15dp"
+                android:text="Password"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_marginTop="15dp"
                 android:text=" *"
-                android:textColor="#FF0000"
-                android:textSize="14sp" />
+                android:textColor="#FF0000" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,162 +141,44 @@
             android:layout_marginRight="15dp">
 
             <EditText
-                android:id="@+id/doi"
-                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:imeOptions="actionNext"
-                android:inputType="date" />
+                android:inputType="textPassword"
+                android:singleLine="true" />
 
-            <Button
-                android:id="@+id/pick_doi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/pass_show"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
                 android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
+                android:clickable="true"
+                android:foregroundGravity="left"
+                app:srcCompat="@drawable/pass_show" />
+
         </LinearLayout>
 
-        <LinearLayout
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Hint"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20sp"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Validity Upto"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text=" *"
-                android:textColor="#FF0000"
-                android:textSize="14sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-            <EditText
-                android:id="@+id/validity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:imeOptions="actionNext"
-                android:inputType="date" />
-
-            <Button
-                android:id="@+id/pick_validity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Date of Birth"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-            <EditText
-                android:id="@+id/dob"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:imeOptions="actionNext"
-                android:inputType="date" />
-
-            <Button
-                android:id="@+id/pick_dob"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Father's Name"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-
-        </LinearLayout>
+            android:layout_marginRight="15dp"/>
 
         <EditText
-            android:id="@+id/father_name"
+            android:id="@+id/hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:imeOptions="actionNext"
-            android:inputType="textPersonName"
-            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:inputType="text"
+            android:singleLine="true"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp">
+            android:layout_marginRight="15dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Address"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-        <EditText
-            android:id="@+id/address"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:imeOptions="actionNext"
-            android:inputType="textPersonName" />
     </LinearLayout>
 </ScrollView>

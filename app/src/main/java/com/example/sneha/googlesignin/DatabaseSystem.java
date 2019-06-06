@@ -14,13 +14,14 @@ public class DatabaseSystem extends SQLiteOpenHelper {
     public static final String COL_2=" username";
     public static final String COL_3=" password";
     public static final String COL_4=" hint";
+    public static final String COL_5=" os";
 
     public DatabaseSystem(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME+" (name TEXT ,username TEXT ,password TEXT ,hint TEXT)");
+        db.execSQL("create table " + TABLE_NAME+" (name TEXT ,username TEXT ,password TEXT ,hint TEXT, OS TEXT)");
     }
 
     @Override
@@ -28,7 +29,7 @@ public class DatabaseSystem extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_NAME);
         onCreate(db);
     }
-    public  boolean insertData(String name,String username,String password,String hint)
+    public  boolean insertData(String name,String username,String password,String hint, String os)
     {
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues= new ContentValues();
@@ -36,6 +37,7 @@ public class DatabaseSystem extends SQLiteOpenHelper {
         contentValues.put(COL_2,username);
         contentValues.put(COL_3,password);
         contentValues.put(COL_4,hint);
+        contentValues.put(COL_5,os);
 
         long result=db.insert(TABLE_NAME,null,contentValues);
         if(result==-1)
@@ -73,17 +75,19 @@ public class DatabaseSystem extends SQLiteOpenHelper {
 
     }
 
-    public boolean updateData(String name,String username,String password,String hint,String a,String b){
+    public boolean updateData(String name,String username,String password,String hint, String os, String a,String b){
             SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues= new ContentValues();
         contentValues.put(COL_1,name);
         contentValues.put(COL_2,username);
         contentValues.put(COL_3,password);
         contentValues.put(COL_4,hint);
+        contentValues.put(COL_5,os);
 
         db.update(TABLE_NAME,contentValues,"name = ? AND username =?",new String[] {a,b});
         return  true;
     }
+
     public Cursor getAllData(){
         SQLiteDatabase db=this.getWritableDatabase();
         Cursor res= db.rawQuery("select * from "+TABLE_NAME,null);

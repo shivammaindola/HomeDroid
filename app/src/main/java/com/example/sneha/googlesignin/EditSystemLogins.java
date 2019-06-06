@@ -2,19 +2,25 @@ package com.example.sneha.googlesignin;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -26,6 +32,9 @@ public class EditSystemLogins extends AppCompatActivity {
     EditText name,username,password,hint;
     AdapterClassSystem adapterClass2;
     ImageView pass_show;
+    Button selectOS;
+    static TextView textOS;
+    static String osName;
     boolean pass_check = false;
     String SYSTEM,USER;
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -43,6 +52,8 @@ public class EditSystemLogins extends AppCompatActivity {
 
                 if( name.getText().toString().trim().equalsIgnoreCase("")){
                     name.setError("Enter Name");
+                }else if(textOS.getText().toString().equals("")){
+                    alertbox("Select an Operating System");
                 }
                 else if(username.getText().toString().trim().equalsIgnoreCase("")){
                     username.setError("Enter Username");
@@ -53,8 +64,10 @@ public class EditSystemLogins extends AppCompatActivity {
                 else{
                     UpdateData();
                     finish();
-                    return true;}
-            default: return false;
+                    return true;
+                }
+            default:
+                return false;
         }
 
     }
@@ -73,6 +86,8 @@ public class EditSystemLogins extends AppCompatActivity {
         username=(EditText)findViewById(R.id.username);
         password=(EditText)findViewById(R.id.password);
         hint=(EditText)findViewById(R.id.hint);
+        selectOS = (Button) findViewById(R.id.selectOS);
+        textOS = (TextView) findViewById(R.id.textOS);
         adapterClass2 = new AdapterClassSystem(SystemLogins1.Name, SystemLogins1.Username, EditSystemLogins.this);
         pass_show = (ImageView)findViewById(R.id.pass_show);
         pass_show.setOnClickListener(new View.OnClickListener() {
@@ -89,41 +104,43 @@ public class EditSystemLogins extends AppCompatActivity {
                 }
             }
         });
-//        CheckBox check = findViewById(R.id.check);
-//        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (checked) {
-//                    password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-//                } else {
-//                    password.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD | InputType.TYPE_CLASS_TEXT);
-//                }
-//            }
-//        });
+
+        //On selecting SELECT..
+        selectOS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EditSystemLogins.this, OperatingSystemName.class);
+                intent.putExtra("NAME", "EditSystemLogin");
+                startActivity(intent);
+            }
+        });
+
 
         Bundle bundle = getIntent().getExtras();
         SYSTEM = bundle.getString("systemname");
         USER = bundle.getString("username");
         Cursor res = mydb.GetTwoData(SYSTEM);
+
         if (res.getCount() == 0) {
             return;
         }
         while (res.moveToNext()) {
-
+            name.setText(res.getString(0));
             username.setText(res.getString(1));
             password.setText(res.getString(2));
             hint.setText(res.getString(3));
-            name.setText(res.getString(0));
-
-
+            textOS.setText(res.getString(4));
         }
     }
 
     public void UpdateData() {
-
-        boolean isUpdated = mydb.updateData(name.getText().toString(),username.getText().toString(),password.getText().toString(),
-                hint.getText().toString(),SYSTEM,USER);
+        boolean isUpdated = mydb.updateData(
+                name.getText().toString(),
+                username.getText().toString(),
+                password.getText().toString(),
+                hint.getText().toString(),
+                osName,
+                SYSTEM,USER);
         if (isUpdated == true) {
             Toast.makeText(EditSystemLogins.this, "Data is updated", LENGTH_LONG).show();
         } else
@@ -142,4 +159,5 @@ public class EditSystemLogins extends AppCompatActivity {
         });
         builder.show();
     }
+
 }

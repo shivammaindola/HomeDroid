@@ -135,6 +135,15 @@
         <item>Address</item>
     </string-array>
 
+    <string-array name="OSnames">
+        <item>-- Select OS --</item>
+        <item>Apple IOS</item>
+        <item>Apple MacOS</item>
+        <item>Android OS</item>
+        <item>Linux</item>
+        <item>Windows</item>
+    </string-array>
+
     <string name="uploadImages">Set your image</string>
     <string name="action_pic">Pictures</string>
     <string name="title_activity_front">ActivityFront</string>

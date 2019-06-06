@@ -363,7 +363,7 @@ public class Banking_card extends AppCompatActivity {
         int n2 = spinnerdebitcredit.getSelectedItemPosition();
         int n3 = spinnertype.getSelectedItemPosition();
         boolean isInserted = mydb.insertData(
-                bankname/*spinner.getSelectedItem().toString()*/, number.getText().toString(), holder.getText().toString(), validthru,
+                bankname, number.getText().toString(), holder.getText().toString(), validthru,
                 cvv.getText().toString(), mpin.getText().toString(), phoneno.getText().toString(),
                 emailid.getText().toString(), carddc/*spinnerdebitcredit.getSelectedItem().toString()*/, cardtype/*spinnertype.getSelectedItem().toString()*/,
                 String.valueOf(n1), String.valueOf(n2), String.valueOf(n3), validfrom,atm.getText().toString());

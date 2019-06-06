@@ -34,6 +34,8 @@
 
     <activity android:name=".ActivityFront" android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_front"/>
 
+        <activity android:name=".OperatingSystemName"/>
+
     <activity android:name=".DisplayDrivingLisence"/>
 
     <activity android:name=".DisplayDrivingLicense"/>

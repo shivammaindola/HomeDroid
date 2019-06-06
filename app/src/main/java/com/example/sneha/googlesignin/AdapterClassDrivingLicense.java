@@ -49,7 +49,7 @@ public class AdapterClassDrivingLicense extends RecyclerView.Adapter<AdapterClas
     public void onBindViewHolder(@NonNull AdapterClassDrivingLicense.SearchViewHolder holder, int position) {
 
         final int index = position;
-        holder.title.setText("Driving License");
+        holder.title.setText("Driving \nLicense");
         holder.logo.setImageResource(R.drawable.driving_license_icon);
         holder.name.setText(numList.get(position));
         holder.head.setText(nameList.get(position));

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="15dp"
-    android:background="@drawable/addback"
-    android:elevation="12dp"
-    android:orientation="vertical"
-    android:padding="15dp"
-    tools:context=".SystemLogin">
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="12dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/addback"
+        tools:context=".SystemLogin">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -31,6 +35,7 @@
             android:layout_marginTop="15dp"
             android:text=" *"
             android:textColor="#FF0000" />
+
     </LinearLayout>
 
     <EditText
@@ -39,26 +44,73 @@
         android:layout_height="wrap_content"
         android:imeOptions="actionNext"
         android:inputType="text"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Operating System"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text=" *"
+                android:textColor="#FF0000" />
+
+            <Button
+                android:id="@+id/selectOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="SELECT" />
+
+        </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textOS"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
             android:textSize="20sp" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" *"
-            android:textColor="#FF0000" />
-    </LinearLayout>
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:textColor="#FF0000" />
+        </LinearLayout>
 
     <EditText
         android:id="@+id/username"
@@ -66,12 +118,16 @@
         android:layout_height="wrap_content"
         android:imeOptions="actionNext"
         android:inputType="text"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,7 +148,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
 
         <EditText
             android:id="@+id/password"
@@ -120,7 +178,9 @@
         android:layout_marginTop="15dp"
         android:text="Hint"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
     <EditText
         android:id="@+id/hint"
@@ -128,8 +188,9 @@
         android:layout_height="wrap_content"
         android:imeOptions="actionNext"
         android:inputType="text"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
-
-
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>

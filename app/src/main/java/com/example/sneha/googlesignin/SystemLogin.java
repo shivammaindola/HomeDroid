@@ -2,6 +2,7 @@ package com.example.sneha.googlesignin;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -10,10 +11,14 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -23,6 +28,10 @@ public class SystemLogin extends AppCompatActivity {
     EditText name,username,password,hint;
     AdapterClassSystem adapterClass2;
     ImageView pass_show;
+    Button selectOS;
+    static TextView textOS;
+    static String osName;
+
     boolean pass_check = false;
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -39,6 +48,8 @@ public class SystemLogin extends AppCompatActivity {
 
                 if( name.getText().toString().trim().equalsIgnoreCase("")){
                     name.setError("Enter Name");
+                }else if(textOS.getText().toString().equals("")){
+                    alertbox("Select an Operating System");
                 }
                 else if(username.getText().toString().trim().equalsIgnoreCase("")){
                     username.setError("Enter Username");
@@ -69,8 +80,11 @@ public class SystemLogin extends AppCompatActivity {
         username=(EditText)findViewById(R.id.username);
         password=(EditText)findViewById(R.id.password);
         hint=(EditText)findViewById(R.id.hint);
+        selectOS = (Button) findViewById(R.id.selectOS);
+        textOS = (TextView) findViewById(R.id.textOS);
         adapterClass2 = new AdapterClassSystem(SystemLogins1.Name, SystemLogins1.Username, SystemLogin.this);
         pass_show = (ImageView)findViewById(R.id.pass_show);
+
         pass_show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,25 +99,27 @@ public class SystemLogin extends AppCompatActivity {
                 }
             }
         });
-//        CheckBox check = findViewById(R.id.check);
-//        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (checked) {
-//                   password.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-//                } else {
-//                    password.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD | InputType.TYPE_CLASS_TEXT);
-//                }
-//            }
-//        });
+
+        // on selecting the SELECT button..
+        selectOS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SystemLogin.this, OperatingSystemName.class);
+                intent.putExtra("NAME", "SystemLogin");
+                startActivity(intent);
+            }
+        });
 
 
     }
     public  void  AddData() {
-        boolean isInserted = myDb.insertData(name.getText().toString()
-                , username.getText().toString(), password.getText().toString(),
-                hint.getText().toString());
+        boolean isInserted = myDb.insertData(
+                name.getText().toString(),
+                username.getText().toString(),
+                password.getText().toString(),
+                hint.getText().toString(),
+                osName);
+
         if (isInserted == true) {
             Toast.makeText(SystemLogin.this, "Data Inserted", Toast.LENGTH_LONG).show();
             SystemLogins1.Name.add(name.getText().toString().trim());
