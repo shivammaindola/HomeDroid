@@ -38,13 +38,13 @@ String activity;
                 BankList banks=bank.get(position);
                 if(activity.equals("editbankingcard")){
                     EditBanking.cardview.setText(banks.getName());
-                    EditBanking.cardtype=banks.getName();
+                    EditBanking.cardtype = banks.getName();
                     finish();
                 }
                 else if(activity.equals("bankingcard"))
                     {
                     Banking_card.cardview.setText(banks.getName());
-                    Banking_card.cardtype=banks.getName();
+                    Banking_card.cardtype = banks.getName();
                     Banking_card.cardview.setVisibility(View.VISIBLE);
                     finish();
                 }

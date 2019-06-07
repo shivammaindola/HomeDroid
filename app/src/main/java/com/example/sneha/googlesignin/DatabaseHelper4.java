@@ -132,7 +132,7 @@ public class DatabaseHelper4 extends SQLiteOpenHelper {
         contentValues.put(COL_15,pin);
 
         db.update(TABLE_NAME,contentValues,"Debit_Number= ?",new String[] {a});
-        return  true;
+        return true;
     }
     public Cursor getAllData(){
         SQLiteDatabase db=this.getWritableDatabase();

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -65,6 +66,7 @@ public class DisplayBanking extends AppCompatActivity {
         t12 = (TextView) findViewById(R.id.validfrom);
         t9 = findViewById(R.id.pin);
 
+
         sdf = new SimpleDateFormat("MMM yyyy");
         input = new SimpleDateFormat("yyyy-MM-dd");
         dataHelper = new DatabaseHelper4(this);
@@ -81,14 +83,22 @@ public class DisplayBanking extends AppCompatActivity {
             t11.setText(res.getString(8) + " " + res.getString(9));
             t3.setText(res.getString(2));
             t4.setText(formatMonthYear(res.getString(3)));
+
             t5.setText(res.getString(4));
             t6.setText(res.getString(5));
             t7.setText(res.getString(6));
             t8.setText(res.getString(7));
-            t12.setText(formatMonthYear(res.getString(13)));
+            Log.e("Tag", "2");
+            if(res.getString(13).equals("")){
+                t12.setText("");
+            }else {
+                t12.setText(formatMonthYear(res.getString(13)));
+            }
+
             t9.setText(res.getString(14));
 
             cardnumber = res.getString(1);
+
         }
     }
 

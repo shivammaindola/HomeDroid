@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class OperatingSystemName extends AppCompatActivity {
     OperatingSystemAdapter adapter;
     String activity;
@@ -18,6 +20,10 @@ public class OperatingSystemName extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.operating_system_names);
+
+        Calligrapher calligrapher=new Calligrapher(this);
+        calligrapher.setFont(this,"cambria.ttf",true);
+
         ListView listView = (ListView) findViewById(R.id.list);
         activity = getIntent().getExtras().getString("NAME");
         final ArrayList<OperatingSystemList>os = new ArrayList<OperatingSystemList>();

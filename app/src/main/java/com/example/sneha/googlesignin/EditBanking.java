@@ -59,7 +59,7 @@ public class EditBanking extends AppCompatActivity {
 
     String pin, cvvno,atmpin;
     Spinner spinner, spinnerdebitcredit, spinnertype;
-    AdapterClassBanking adapterClass2;
+//    AdapterClassBanking adapterClass2;
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -81,6 +81,8 @@ public class EditBanking extends AppCompatActivity {
                 int cvvlength = cvvno.length();
                 if (number.getText().toString().trim().equalsIgnoreCase("")) {
                     number.setError("Enter Number");
+                }else if(number.getText().toString().length() < 4){
+                    number.setError("Enter valid number");
                 } else if (holder.getText().toString().trim().equalsIgnoreCase("")) {
 
                     holder.setError("Enter Name");
@@ -92,8 +94,6 @@ public class EditBanking extends AppCompatActivity {
                     cvv.setError("Enter CVV");
                 } else if (cvvlength != 3) {
                     cvv.setError("Enter 3 Digits");
-                } else if (mpin.getText().toString().equalsIgnoreCase("")) {
-                    mpin.setError("Enter MPIN");
                 }else if (atmlength != 4) {
                  atm.setError("Enter 4 Digits");
                 } else if (atm.getText().toString().equalsIgnoreCase("")) {
@@ -157,12 +157,11 @@ public class EditBanking extends AppCompatActivity {
         spinnerdebitcredit = (Spinner) findViewById(R.id.debitcredit);
         spinnertype = (Spinner) findViewById(R.id.type);
         atm=findViewById(R.id.pin);
-//        CheckBox check = findViewById(R.id.check1);
-//        CheckBox check2 = findViewById(R.id.check2);
-//        CheckBox check3 = findViewById(R.id.check3);
+
         pass_show_cvv = (ImageView)findViewById(R.id.pass_show_cvv);
         pass_show_mpin = (ImageView)findViewById(R.id.pass_show_mpin);
         pass_show_pin = (ImageView)findViewById(R.id.pass_show_pin);
+
         fromtext = findViewById(R.id.fromtext);
         pick2 = findViewById(R.id.pickfrom);
         debitradio = findViewById(R.id.debitradio);
@@ -242,41 +241,7 @@ public class EditBanking extends AppCompatActivity {
                 }
             }
         });
-//        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    cvv.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    cvv.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
-//
-//        check2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    mpin.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    mpin.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
-//
-//        check3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    atm.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    atm.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.banklist, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -294,7 +259,7 @@ public class EditBanking extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnertype.setPrompt("Gender");
         spinnertype.setAdapter(adapter3);
-        adapterClass2 = new AdapterClassBanking(BankingCard1.banknamelist, BankingCard1.cardlist, EditBanking.this);
+//        adapterClass2 = new AdapterClassBanking(BankingCard1.banknamelist, BankingCard1.cardlist, EditBanking.this);
         final Bundle bundle = getIntent().getExtras();
         passnum = bundle.getString("cardnumber");
 
@@ -306,7 +271,6 @@ public class EditBanking extends AppCompatActivity {
             int n1 = Integer.parseInt(res.getString(10));
             int n2 = Integer.parseInt(res.getString(11));
             int n3 = Integer.parseInt(res.getString(12));
-            /*spinner.setSelection(n1);*/
             bankview.setText(res.getString(0));
             bankname=res.getString(0);
             number.setText(res.getString(1));
@@ -326,7 +290,11 @@ public class EditBanking extends AppCompatActivity {
             }
             spinnerdebitcredit.setSelection(n2);
             spinnertype.setSelection(n3);
-            fromtext.setText(formatMonthYear(res.getString(13)));
+            if(res.getString(13).equals("")){
+                fromtext.setText("");
+            }else {
+                fromtext.setText(formatMonthYear(res.getString(13)));
+            }
             validthru = res.getString(3);
             validfrom = res.getString(13);
             atm.setText(res.getString(14));
@@ -399,11 +367,23 @@ public class EditBanking extends AppCompatActivity {
         int n1 = spinner.getSelectedItemPosition();
         int n2 = spinnerdebitcredit.getSelectedItemPosition();
         int n3 = spinnertype.getSelectedItemPosition();
-        boolean isUpdated = myDb.update(/*spinner.getSelectedItem().toString()*/bankname, number.getText().toString(),
-                holder.getText().toString(), validthru, cvv.getText().toString(),
-                mpin.getText().toString(), phoneno.getText().toString(), emailid.getText().toString(),
-                /*spinnerdebitcredit.getSelectedItem().toString()*/carddc, cardtype/*spinnertype.getSelectedItem().toString()*/,
-                String.valueOf(n1), String.valueOf(n2), String.valueOf(n3), validfrom, atm.getText().toString(),passnum);
+        boolean isUpdated = myDb.update(
+                bankname,
+                number.getText().toString(),
+                holder.getText().toString(),
+                validthru,
+                cvv.getText().toString(),
+                mpin.getText().toString(),
+                phoneno.getText().toString(),
+                emailid.getText().toString(),
+                carddc,
+                cardview.getText().toString(),
+                String.valueOf(n1),
+                String.valueOf(n2),
+                String.valueOf(n3),
+                validfrom,
+                atm.getText().toString(),
+                passnum);
 
         if (isUpdated == true) {
             Toast.makeText(EditBanking.this, "Data is updated", LENGTH_LONG).show();

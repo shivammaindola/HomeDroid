@@ -17,18 +17,12 @@ public class BankList {
         return name;
     }
 
-  /*  public void setName(String name) {
-        this.name = name;
-    }*/
 
     public int getmImageResourceId() {
         return mImageResourceId;
     }
 
-    /*public void setmImageResourceId(int mImageResourceId) {
-        this.mImageResourceId = mImageResourceId;
-    }
-*/
+
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }

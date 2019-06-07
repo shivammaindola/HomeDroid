@@ -42,7 +42,7 @@ public class Banking_card extends AppCompatActivity {
     RadioGroup rgroup;
     String pin, cvvno,atmpin;
     Spinner spinner, spinnerdebitcredit, spinnertype;
-    AdapterClassBanking adapterClass2;
+//    AdapterClassBanking adapterClass2;
     String monthYearStr;
     String validfrom = "";
     long timeInMilliseconds;
@@ -76,7 +76,10 @@ public class Banking_card extends AppCompatActivity {
                 int atmlength=atmpin.length();
                 if (number.getText().toString().trim().equalsIgnoreCase("")) {
                     number.setError("Enter Number");
-                } else if (holder.getText().toString().trim().equalsIgnoreCase("")) {
+                }else if(number.getText().toString().length() < 4){
+                    number.setError("Enter valid number");
+                }
+                else if (holder.getText().toString().trim().equalsIgnoreCase("")) {
 
                     holder.setError("Enter Name");
                 } else if (exptext.getText().toString().trim().equalsIgnoreCase("")) {
@@ -87,9 +90,6 @@ public class Banking_card extends AppCompatActivity {
                     cvv.setError("Enter CVV");
                 } else if (cvvlength != 3) {
                     cvv.setError("Enter 3 Digits");
-                } else if (mpin.getText().toString().equalsIgnoreCase("")) {
-                    mpin.setError("Enter MPIN");
-
                 }else if (atmlength != 4) {
                    atm.setError("Enter 4 Digits");
                 } else if (atm.getText().toString().equalsIgnoreCase("")) {
@@ -152,9 +152,6 @@ public class Banking_card extends AppCompatActivity {
         spinner = (Spinner) findViewById(R.id.spinner);
         spinnerdebitcredit = (Spinner) findViewById(R.id.debitcredit);
         spinnertype = (Spinner) findViewById(R.id.type);
-//        CheckBox check = findViewById(R.id.check1);
-//        CheckBox check2 = findViewById(R.id.check2);
-//        CheckBox check3 = findViewById(R.id.check3);
         pass_show_cvv = (ImageView)findViewById(R.id.pass_show_cvv);
         pass_show_mpin = (ImageView)findViewById(R.id.pass_show_mpin);
         pass_show_pin = (ImageView)findViewById(R.id.pass_show_pin);
@@ -243,39 +240,8 @@ public class Banking_card extends AppCompatActivity {
                 }
             }
         });
-//        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    cvv.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    cvv.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
-//        check2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    mpin.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    mpin.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
-//        check3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if (!checked) {
-//                    atm.setInputType(InputType.TYPE_NUMBER_VARIATION_PASSWORD | InputType.TYPE_CLASS_NUMBER);
-//                } else {
-//                    atm.setInputType(InputType.TYPE_CLASS_NUMBER);
-//                }
-//            }
-//        });
+
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.banklist, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -294,7 +260,7 @@ public class Banking_card extends AppCompatActivity {
         spinnertype.setPrompt("Gender");
         spinnertype.setAdapter(adapter3);
 
-        adapterClass2 = new AdapterClassBanking(BankingCard1.banknamelist, BankingCard1.cardlist, Banking_card.this);
+//        adapterClass2 = new AdapterClassBanking(BankingCard1.banknamelist, BankingCard1.cardlist, Banking_card.this);
 
 
 
@@ -363,16 +329,27 @@ public class Banking_card extends AppCompatActivity {
         int n2 = spinnerdebitcredit.getSelectedItemPosition();
         int n3 = spinnertype.getSelectedItemPosition();
         boolean isInserted = mydb.insertData(
-                bankname, number.getText().toString(), holder.getText().toString(), validthru,
-                cvv.getText().toString(), mpin.getText().toString(), phoneno.getText().toString(),
-                emailid.getText().toString(), carddc/*spinnerdebitcredit.getSelectedItem().toString()*/, cardtype/*spinnertype.getSelectedItem().toString()*/,
-                String.valueOf(n1), String.valueOf(n2), String.valueOf(n3), validfrom,atm.getText().toString());
+                bankname,
+                number.getText().toString(),
+                holder.getText().toString(),
+                validthru,
+                cvv.getText().toString(),
+                mpin.getText().toString(),
+                phoneno.getText().toString(),
+                emailid.getText().toString(),
+                carddc,
+                cardtype,
+                String.valueOf(n1),
+                String.valueOf(n2),
+                String.valueOf(n3),
+                validfrom,
+                atm.getText().toString());
 
         if (isInserted == true) {
             Toast.makeText(Banking_card.this, "Data inserted", Toast.LENGTH_LONG).show();
-            BankingCard1.banknamelist.add(/*spinner.getSelectedItem().toString().trim()*/bankname);
-            BankingCard1.cardlist.add(number.getText().toString().trim());
-            adapterClass2.notifyDataSetChanged();
+//            BankingCard1.banknamelist.add(/*spinner.getSelectedItem().toString().trim()*/bankname);
+//            BankingCard1.cardlist.add(number.getText().toString().trim());
+//            adapterClass2.notifyDataSetChanged();
 
         } else
             Toast.makeText(Banking_card.this, "Data is not inserted", Toast.LENGTH_LONG).show();
