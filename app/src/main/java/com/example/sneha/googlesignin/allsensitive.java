@@ -1,16 +1,35 @@
 package com.example.sneha.googlesignin;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
+
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class allsensitive extends AppCompatActivity  {
     CardView pass ,voter,pan,aadhar,banking,bankdetail,membership,wifipass,other,mail,social,online,insurance,remote,gas,elec,sys, driving;
+    MaterialSearchView searchView;
+    LinearLayout container_all;
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.searchmenu, menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        searchView.setMenuItem(item);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
 
 
     @Override
@@ -18,8 +37,33 @@ public class allsensitive extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_allsensitive);
+
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
+
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
+        toolbar.setTitleTextAppearance(this,R.style.Cambria);
+
+        Something();
+
+
+    }
+
+
+    // Change here....
+    public void setModules(){
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
+    public void Something(){
         pass=(CardView)findViewById(R.id.card1);
         voter=(CardView)findViewById(R.id.card2);
         pan=(CardView)findViewById(R.id.card3);
@@ -38,6 +82,8 @@ public class allsensitive extends AppCompatActivity  {
         sys=(CardView)findViewById(R.id.card16);
         remote=(CardView)findViewById(R.id.card17);
         driving = (CardView)findViewById(R.id.card18);
+        searchView = (MaterialSearchView) findViewById(R.id.search_view);
+        container_all = (LinearLayout) findViewById(R.id.container_all);
 
         pass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -165,12 +211,6 @@ public class allsensitive extends AppCompatActivity  {
 
             }
         });
-
-    }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
     }
 }
 

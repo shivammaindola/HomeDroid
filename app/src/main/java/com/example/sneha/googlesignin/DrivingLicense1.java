@@ -27,6 +27,8 @@ public class DrivingLicense1 extends AppCompatActivity {
     RecyclerView allList;
     ArrayList<String> nameList;
     ArrayList<String> numberList;
+    static ArrayList<String> search_nameList;
+    static ArrayList<String> search_numberList;
     DatabaseHelper12 database;
     AdapterClassDrivingLicense adapter;
 
@@ -69,6 +71,8 @@ public class DrivingLicense1 extends AppCompatActivity {
         database = new DatabaseHelper12(DrivingLicense1.this);
         nameList = new ArrayList<>();
         numberList = new ArrayList<>();
+        search_nameList = new ArrayList<>();
+        search_numberList = new ArrayList<>();
 
         // Setting the recycler View....
         allList.setHasFixedSize(true);
@@ -80,6 +84,30 @@ public class DrivingLicense1 extends AppCompatActivity {
         toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
         toolbar.setTitleTextAppearance(this, R.style.Cambria);
 
+
+        // On Search...
+        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                if(newText != null && !newText.isEmpty()){
+                    database.QUERYs(newText);
+
+                    adapter = new AdapterClassDrivingLicense(search_nameList, search_numberList, DrivingLicense1.this);
+                    allList.setAdapter(adapter);
+                    adapter.notifyDataSetChanged();
+                }else{
+                    setAdapter();
+                }
+
+                return true;
+            }
+        });
 
 
     }

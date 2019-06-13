@@ -75,7 +75,7 @@ public class DisplayMailDetails extends AppCompatActivity {
             t3.setText(res.getString(2));
             t4.setText(res.getString(3));
             //t5.setText(res.getString(4));
-            t6.setText(res.getString(5));
+            t6.setText(res.getString(4));
 
         }
     }

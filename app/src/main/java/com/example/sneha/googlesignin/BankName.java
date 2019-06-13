@@ -1,11 +1,18 @@
 package com.example.sneha.googlesignin;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.miguelcatalan.materialsearchview.MaterialSearchView;
 
 import java.util.ArrayList;
 
@@ -14,14 +21,30 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 public class BankName extends AppCompatActivity {
     BankListAdapter adapter;
     String activity;
+    MaterialSearchView searchView;
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.searchmenu, menu);
+        MenuItem item = menu.findItem(R.id.action_search);
+        searchView.setMenuItem(item);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_bank_name);
-        ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = (ListView) findViewById(R.id.list);
         activity = getIntent().getExtras().getString("NAME");
+
+        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
+        toolbar.setTitleTextAppearance(this,R.style.Cambria);
+
+        searchView = (MaterialSearchView) findViewById(R.id.search_view);
 
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
@@ -171,6 +194,8 @@ public class BankName extends AppCompatActivity {
         bank.add(new BankList("Vijaya Bank", R.drawable.vijayabank));
         bank.add(new BankList("Yes Bank", R.drawable.yesbank));
 
+        final ArrayList<BankList> allBank = new ArrayList<>(bank);
+
         adapter = new BankListAdapter(this, bank);
 
         listView.setAdapter(adapter);
@@ -200,6 +225,35 @@ public class BankName extends AppCompatActivity {
                     Account_details.bankview.setVisibility(View.VISIBLE);
                     finish();
                 }
+            }
+        });
+
+        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String text) {
+                ArrayList<BankList> filteredList = new ArrayList<>();
+
+                if(text == null || text.length() == 0){
+                    filteredList.addAll(allBank);
+                }else{
+                    String filteredString = text.toLowerCase().trim();
+                    for(BankList i : allBank){
+                        if(i.getName().toLowerCase().contains(filteredString)){
+                            filteredList.add(i);
+
+                        }
+                    }
+                }
+                bank.clear();
+                bank.addAll(filteredList);
+                adapter.notifyDataSetChanged();
+                return false;
             }
         });
     }

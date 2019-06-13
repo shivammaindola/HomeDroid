@@ -2,6 +2,7 @@ package com.example.sneha.googlesignin;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
@@ -11,11 +12,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -28,7 +31,9 @@ public class SocialSites extends AppCompatActivity {
     boolean pass_check = false;
 
     AdapterClassSocial adapterClass2;
-    Spinner s;
+    static TextView pickSocial;
+    Button selectSocial;
+    static String socialName;
 
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -42,7 +47,10 @@ public class SocialSites extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.my_notees111:
 
-                if (user.getText().toString().trim().equalsIgnoreCase("")) {
+                if(pickSocial.getText().toString().equals("")){
+                    pickSocial.setError("Select Compony");
+                }
+                else if (user.getText().toString().trim().equalsIgnoreCase("")) {
                     user.setError("Enter Username");
                 } else if (pass.getText().toString().trim().equalsIgnoreCase("")) {
                     pass.setError("Enter Password");
@@ -58,8 +66,6 @@ public class SocialSites extends AppCompatActivity {
                         finish();
                         return true;
                     }
-                } else if (s.getSelectedItem().toString().equals("--Select Company Name--")) {
-                    alertbox("Please Select Company");
                 } else {
                     Toast.makeText(this, "else", Toast.LENGTH_SHORT).show();
                     AddData();
@@ -82,7 +88,8 @@ public class SocialSites extends AppCompatActivity {
         calligrapher.setFont(this, "cambria.ttf", true);
         mydb = new DatabaseH(this);
         pass = (EditText) findViewById(R.id.pass);
-        s = (Spinner) (findViewById(R.id.spinner));
+        selectSocial = (Button) findViewById(R.id.selectSocial);
+        pickSocial = (TextView) findViewById(R.id.pickSocial);
         user = (EditText) findViewById(R.id.user);
         secques = (EditText) findViewById(R.id.secques);
         secans = (EditText) findViewById(R.id.secans);
@@ -104,25 +111,28 @@ public class SocialSites extends AppCompatActivity {
             }
         });
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.socialsites, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        s.setPrompt("Gender");
-        s.setAdapter(adapter);
+        selectSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(SocialSites.this, SocialMediaName.class);
+                intent.putExtra("NAME", "socialSite");
+                startActivity(intent);
+            }
+        });
+
 
         adapterClass2 = new AdapterClassSocial(SocialSites1.socialsitenamelist, SocialSites1.usernamelist, SocialSites1.passwordlist, SocialSites.this);
 
     }
 
     public void AddData() {
-        int n1 = s.getSelectedItemPosition();
-        boolean isInserted = mydb.insertData(
-                s.getSelectedItem().toString(), user.getText().toString(),
+        //int n1 = s.getSelectedItemPosition();
+        boolean isInserted = mydb.insertData("hello", user.getText().toString(),
                 pass.getText().toString(), secques.getText().toString(),
-                secans.getText().toString(), recovery.getText().toString(), String.valueOf(n1),holder.getText().toString());
+                secans.getText().toString(), recovery.getText().toString(), socialName,holder.getText().toString());
         if (isInserted == true) {
             Toast.makeText(SocialSites.this, "Data inserted", Toast.LENGTH_LONG).show();
-            SocialSites1.socialsitenamelist.add(s.getSelectedItem().toString().trim());
+            SocialSites1.socialsitenamelist.add(pickSocial.getText().toString());
             SocialSites1.usernamelist.add(user.getText().toString().trim());
             SocialSites1.passwordlist.add(pass.getText().toString().trim());
             adapterClass2.notifyDataSetChanged();

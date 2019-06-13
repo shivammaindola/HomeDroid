@@ -106,19 +106,7 @@ public class EditMail extends AppCompatActivity {
             }
         });
 
-//        CheckBox check=findViewById(R.id.check);
-//        check.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-//            @Override
-//            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-//
-//                if(checked){
-//                    pass.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
-//                }
-//                else{
-//                    pass.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD | InputType.TYPE_CLASS_TEXT);
-//                }
-//            }
-//        });
+
         myDb = new DatabaseH1(this);
         adapterClass1 = new AdapterClassMail(Mail1.emaillist, Mail1.passwordlist, EditMail.this);
         Bundle bundle = getIntent().getExtras();
@@ -134,14 +122,9 @@ public class EditMail extends AppCompatActivity {
             pass.setText(res.getString(1));
             phone.setText(res.getString(2));
             recovery.setText(res.getString(3));
-            //user.setText(res.getString(4));
-            Log.e("TAG", "Hello1");
-            owner.setText(res.getString(5));
-            Log.e("TAG", "Hello2");
-
-
+            owner.setText(res.getString(4));
         }
-        Log.e("TAG", "Hello4");
+
     }
     public  void UpdateData()
     {

@@ -48,7 +48,7 @@ public class DisplayAadharDetails extends AppCompatActivity {
 
         t1=(TextView)findViewById(R.id.holdernmtextView);
         t2=(TextView)findViewById(R.id.dateofisstextView);
-        //t3=(TextView)findViewById(R.id.viewPhoneNumber);
+        t3=(TextView)findViewById(R.id.viewPhoneNumber);
         t4=(TextView)findViewById(R.id.passportnotextView);
         t5=(TextView)findViewById(R.id.placeeetextView);
 

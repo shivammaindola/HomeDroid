@@ -70,7 +70,6 @@ public class DataHelper extends SQLiteOpenHelper{
     {
         SQLiteDatabase db = this.getWritableDatabase();
 
-       // Cursor res = db.rawQuery("select * from " + "fts_table"+ " where fts_table MATCH ?", new String[]{a});
         Cursor res= db.rawQuery("select * from "+TABLE_NAME,null);
         Passport.a.clear();
         Passport.b.clear();

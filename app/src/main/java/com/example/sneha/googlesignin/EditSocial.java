@@ -2,21 +2,25 @@ package com.example.sneha.googlesignin;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
@@ -28,9 +32,11 @@ public class EditSocial extends AppCompatActivity {
     EditText user, pass, secques, secans, recovery,holder;
     ImageView pass_show;
     boolean pass_check = false;
+    static TextView pickSocial;
+    Button selectSocial;
+    static String socialName;
 
     AdapterClassSocial adapterClass2;
-    Spinner s;
     String sitename, emailid;
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,7 +51,10 @@ public class EditSocial extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.my_notees111:
 
-                if (user.getText().toString().trim().equalsIgnoreCase("")) {
+                if(pickSocial.getText().toString().equals("")){
+                    pickSocial.setError("Select Compony");
+                }
+                else if (user.getText().toString().trim().equalsIgnoreCase("")) {
                     user.setError("Enter Username");
                 } else if (pass.getText().toString().trim().equalsIgnoreCase("")) {
                     pass.setError("Enter Password");
@@ -61,9 +70,7 @@ public class EditSocial extends AppCompatActivity {
                         finish();
                         return true;
                     }
-                } else if (s.getSelectedItem().toString().equals("--Select Company Name--")) {
-                    alertbox("Please Select Company");
-                } else {
+                }else {
                     Toast.makeText(this, "else", Toast.LENGTH_SHORT).show();
                     UpdateData();
                     finish();
@@ -84,7 +91,8 @@ public class EditSocial extends AppCompatActivity {
         Calligrapher calligrapher = new Calligrapher(this);
         calligrapher.setFont(this, "cambria.ttf", true);
         pass = (EditText) findViewById(R.id.pass);
-        s = (Spinner) (findViewById(R.id.spinner));
+        selectSocial = (Button) findViewById(R.id.selectSocial);
+        pickSocial = (TextView) findViewById(R.id.pickSocial);
         user = (EditText) findViewById(R.id.user);
         secques = (EditText) findViewById(R.id.secques);
         secans = (EditText) findViewById(R.id.secans);
@@ -117,11 +125,7 @@ public class EditSocial extends AppCompatActivity {
 //                }
 //            }
 //        });
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.socialsites, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        s.setPrompt("Gender");
-        s.setAdapter(adapter);
+
         mydb = new DatabaseH(this);
         adapterClass2 = new AdapterClassSocial(SocialSites1.socialsitenamelist, SocialSites1.usernamelist, SocialSites1.passwordlist, EditSocial.this);
 
@@ -134,24 +138,32 @@ public class EditSocial extends AppCompatActivity {
             return;
         }
         while (res.moveToNext()) {
-            int n1 = Integer.parseInt(res.getString(6));
-            s.setSelection(n1);
+
             user.setText(res.getString(1));
             pass.setText(res.getString(2));
             secques.setText(res.getString(3));
             secques.setText(res.getString(4));
             recovery.setText(res.getString(5));
+            pickSocial.setText(res.getString(6));
             holder.setText(res.getString(7));
 
-
         }
+
+        selectSocial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(EditSocial.this, SocialMediaName.class);
+                intent.putExtra("NAME", "EditSocialSite");
+                startActivity(intent);
+            }
+        });
     }
 
     public void UpdateData() {
-        int n1 = s.getSelectedItemPosition();
+        //int n1 = s.getSelectedItemPosition();
 
-        boolean isUpdated = mydb.update(s.getSelectedItem().toString(), user.getText().toString(), pass.getText().toString(), secques.getText().toString(), secans.getText().toString(),
-                recovery.getText().toString(), String.valueOf(n1),holder.getText().toString(), sitename, emailid);
+        boolean isUpdated = mydb.update("Hello", user.getText().toString(), pass.getText().toString(), secques.getText().toString(), secans.getText().toString(),
+                recovery.getText().toString(), socialName,holder.getText().toString(), sitename, emailid);
         if (isUpdated == true) {
             Toast.makeText(EditSocial.this, "Data is updated", LENGTH_LONG).show();
         } else

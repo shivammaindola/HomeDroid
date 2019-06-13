@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,6 +72,7 @@ public class AdapterClassSocial  extends RecyclerView.Adapter<AdapterClassSocial
         searchViewHolder.pass.setText("");
         searchViewHolder.title.setText("  Social\nNetworking");
         searchViewHolder.logo.setImageResource(R.drawable.socialnetworking);
+
         searchViewHolder.userdetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,6 +89,10 @@ public class AdapterClassSocial  extends RecyclerView.Adapter<AdapterClassSocial
             @Override
             public void onClick(View view) {
 
+                Log.e("tag", NameList.get(p));
+                Log.e("tag", EmailNameList.get(p));
+                Log.e("tag", PasswordList.get(p));
+
                 new AlertDialog.Builder(context)
                         .setIcon(android.R.drawable.alert_light_frame)
                         .setTitle("Confirm Delete")
@@ -96,7 +102,7 @@ public class AdapterClassSocial  extends RecyclerView.Adapter<AdapterClassSocial
                             public void onClick(DialogInterface dialog, int which) {
                                 helper=new DatabaseH(context);
                                 SQLiteDatabase db = helper.getWritableDatabase();
-                                db.delete("Social_table","name =? and username =? and pass =?",new String[]{NameList.get(p),EmailNameList.get(p),PasswordList.get(p)});
+                                db.delete("Social_table","n1 =? and username =? and pass =?",new String[]{NameList.get(p),EmailNameList.get(p),PasswordList.get(p)});
                                 // db.delete("passport_table", "passport_num " + "= " + EmailNameList.get(p), null);
                                 //   helper.delete(EmailNameList.get(p));
 

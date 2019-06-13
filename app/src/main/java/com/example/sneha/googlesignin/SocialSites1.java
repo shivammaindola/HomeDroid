@@ -141,7 +141,7 @@ public class SocialSites1 extends AppCompatActivity {
             return;
         } else {
             while (res.moveToNext()) {
-                socialsitenamelist.add(res.getString(0));
+                socialsitenamelist.add(res.getString(6));
                 usernamelist.add(res.getString(1));
                 passwordlist.add(res.getString(2));
             }

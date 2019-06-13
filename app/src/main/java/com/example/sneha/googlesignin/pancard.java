@@ -11,7 +11,10 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -55,7 +58,7 @@ public class pancard extends AppCompatActivity  implements DatePickerDialog.OnDa
         switch(item.getItemId())
         {
             case R.id.my_notees111:
-                p= number.getText().toString();
+                p = number.getText().toString();
                 length=p.length();
                 if( name.getText().toString().trim().equalsIgnoreCase("")){
                      name.setError("Enter Name");
@@ -85,7 +88,7 @@ public class pancard extends AppCompatActivity  implements DatePickerDialog.OnDa
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_pancard);
-        Calligrapher calligrapher=new Calligrapher(this);
+        final Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
 
         myDb= new DatabaseHelper2(this);
@@ -116,6 +119,52 @@ public class pancard extends AppCompatActivity  implements DatePickerDialog.OnDa
             }
         });
 
+        number.addTextChangedListener(new TextWatcher() {
+
+            String text_before = "";
+            String text_after = "";
+            int count_text = 0;
+
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                text_before = number.getText().toString();
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                text_after = number.getText().toString();
+
+                // Increment count of text in number...
+                count_text = text_after.length();
+
+
+                if(count_text != 0) {
+
+                    if ((count_text <= 5 || count_text == 10) && Character.isDigit(text_after.charAt(text_after.length() - 1))) {
+
+                        number.setText(text_before);
+
+                    } else if (count_text > 5 && count_text < 10) {
+                        if (!Character.isDigit(text_after.charAt(text_after.length() - 1))) {
+
+                            number.setText(text_before);
+
+                        }
+                    } else if (count_text > 10) {
+
+                        number.setText(text_before);
+
+                    }
+                }
+
+                number.setSelection(number.length());
+            }
+        });
 
 
     }

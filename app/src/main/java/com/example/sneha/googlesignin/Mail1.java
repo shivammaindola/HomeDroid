@@ -33,6 +33,7 @@ public class Mail1 extends AppCompatActivity {
     DatabaseH1 db;
 
     static AdapterClassMail adapterClass;
+
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.pass1, menu);
@@ -79,8 +80,9 @@ public class Mail1 extends AppCompatActivity {
         passwordlist = new ArrayList<>();
         allList.setHasFixedSize(true);
         allList.setLayoutManager(new LinearLayoutManager(this));
-       // allList.addItemDecoration(new DividerItemDecoration(this,LinearLayoutManager.VERTICAL));
+
         setAdapter();
+
         searchView.setOnSearchViewListener(new MaterialSearchView.SearchViewListener() {
             @Override
             public void onSearchViewShown() {
@@ -101,7 +103,7 @@ public class Mail1 extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if(newText!=NULL&&!newText.isEmpty())
+                if(newText!=NULL && !newText.isEmpty())
                 {
                     db.QUERYs(newText);
 

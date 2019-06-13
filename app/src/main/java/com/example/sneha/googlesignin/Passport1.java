@@ -19,6 +19,7 @@ import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -57,9 +58,10 @@ public class Passport1 extends AppCompatActivity implements DatePickerDialog.OnD
 
     EditText holdername, passnum, place, issue, expiry;
     Button btnAddData, pick, pick1,image;
+    Button reminderButton;
     static final int DATEPICKER_DIALOG_ID = 0;
     static final int DATEPICKER_DIALOG_ID1 = 1;
-    // final  static int RQS_1=1;
+    NotificationHelper notificationHelper;
     int day, month, year;
     int dayFinal, monthFinal, yearFinal;
     int key = 0;
@@ -118,17 +120,15 @@ public class Passport1 extends AppCompatActivity implements DatePickerDialog.OnD
         place = (EditText) findViewById(R.id.editText_place);
         issue = (EditText) findViewById(R.id.editText_id);
         expiry = (EditText) findViewById(R.id.editText_id1);
-        // btnAddData = (Button)findViewById(R.id.button_add);
         pick = (Button) findViewById(R.id.pick);
         pick1 = (Button) findViewById(R.id.pick1);
+        reminderButton = (Button) findViewById(R.id.reminderButton);
+        notificationHelper = new NotificationHelper(this);
 
-      //  image=(Button) findViewById(R.id.image);
-        //profileImageView = (ImageView) findViewById(R.id.profileImageView);
 
 
         myDb = new DataHelper(this);
         adapterClass1 = new AdapterClass(Passport.passportnamelist, Passport.passportnumlist, Passport1.this);
-        // AddData();
         pick.setOnClickListener(new View.OnClickListener() {
 
             @RequiresApi(api = Build.VERSION_CODES.N)
@@ -163,15 +163,21 @@ public class Passport1 extends AppCompatActivity implements DatePickerDialog.OnD
 
             }
         });
-/*
-        image.setOnClickListener(this);
 
-        if (ContextCompat.checkSelfPermission(Passport1.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            profileImageView.setEnabled(false);
-            ActivityCompat.requestPermissions(Passport1.this, new String[] { Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE }, 0);
-        } else {
-            profileImageView.setEnabled(true);
-        }*/
+        // On clicking Set Reminder for Renewal...
+        reminderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                // Simple Notificatoin testing....
+//                NotificationCompat.Builder nb = notificationHelper.getNotification("HomedRoid", "Hello I am here !!");
+//                notificationHelper.getManager().notify(1, nb.build());
+
+                Intent intent  = new Intent(Passport1.this, ReminderPassport.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
     //For first pick option
@@ -279,15 +285,6 @@ int k=0;
 
     public void AddData() {
 
-
-       /* profileImageView.setDrawingCacheEnabled(true);
-        profileImageView.buildDrawingCache();
-        Bitmap bitmap = profileImageView.getDrawingCache();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-        byte[] data = baos.toByteArray();*/
-
-
         boolean isInserted = myDb.insertData(holdername.getText().toString(),
                 passnum.getText().toString(),
                 place.getText().toString(), issue.getText().toString(), expiry.getText().toString());
@@ -296,7 +293,6 @@ int k=0;
             Passport.passportnamelist.add(holdername.getText().toString().trim());
             Passport.passportnumlist.add(passnum.getText().toString().trim());
             adapterClass1.notifyDataSetChanged();
-            // Passport.adapterClass.notifyDataSetChanged();
         } else
             Toast.makeText(Passport1.this, "Data not Inserted", Toast.LENGTH_LONG).show();
     }
@@ -314,129 +310,6 @@ int k=0;
         builder.show();
     }
 
- /*   @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-
-            case R.id.image:
-                new MaterialDialog.Builder(this)
-                        .title(R.string.uploadImages)
-                        .items(R.array.uploadImages)
-                        .itemsIds(R.array.itemIds)
-                        .itemsCallback(new MaterialDialog.ListCallback() {
-                            @Override
-                            public void onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
-                                switch (which){
-                                    case 0:
-                                        Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
-                                        photoPickerIntent.setType("image/*");
-                                        startActivityForResult(photoPickerIntent, SELECT_PHOTO);
-                                        break;
-                                    case 1:
-                                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                                        startActivityForResult(intent, CAPTURE_PHOTO);
-                                        break;
-                                    case 2:
-                                        profileImageView.setImageResource(R.drawable.noimage);
-                                        break;
-                                }
-                            }
-                        })
-                        .show();
-                break;
-
-        }
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        if (requestCode == 0) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED
-                    && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-                profileImageView.setEnabled(true);
-            }
-        }
-    }
-
-    public void setProgressBar(){
-        progressBar = new ProgressDialog(this);
-        progressBar.setCancelable(true);
-        progressBar.setMessage("Please wait...");
-        progressBar.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        progressBar.setProgress(0);
-        progressBar.setMax(100);
-        progressBar.show();
-        progressBarStatus = 0;
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (progressBarStatus < 100){
-                    progressBarStatus += 30;
-
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    progressBarbHandler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            progressBar.setProgress(progressBarStatus);
-                        }
-                    });
-                }
-                if (progressBarStatus >= 100) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    progressBar.dismiss();
-                }
-
-            }
-        }).start();
-    }
-*/
-
-   /* @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == SELECT_PHOTO){
-            if(resultCode == RESULT_OK) {
-                try {
-                    final Uri imageUri = data.getData();
-                    final InputStream imageStream = getContentResolver().openInputStream(imageUri);
-                    final Bitmap selectedImage = BitmapFactory.decodeStream(imageStream);
-                    //set Progress Bar
-                    setProgressBar();
-                    //set profile picture form gallery
-                    profileImageView.setImageBitmap(selectedImage);
-
-
-                } catch (FileNotFoundException e) {
-                    e.printStackTrace();
-                }
-            }
-
-        }else if(requestCode == CAPTURE_PHOTO){
-            if(resultCode == RESULT_OK) {
-                onCaptureImageResult(data);
-            }
-        }
-    }
-    private void onCaptureImageResult(Intent data) {
-        thumbnail = (Bitmap) data.getExtras().get("data");
-
-        //set Progress Bar
-        setProgressBar();
-//        //set profile picture form camera
-//        profileImageView.setMaxWidth(200);
-        profileImageView.setImageBitmap(thumbnail);
-
-    }
-*/
     @Override
     public void onBackPressed() {
         super.onBackPressed();
@@ -445,6 +318,3 @@ int k=0;
     }
 
 }
-//);
-// }
-//}

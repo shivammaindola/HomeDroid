@@ -88,4 +88,30 @@ public class DatabaseHelper12 extends SQLiteOpenHelper {
         return true;
     }
 
+    // On Search queries...
+    public void QUERYs(String name)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        Cursor res= db.rawQuery("select * from "+TABLE_NAME,null);
+        DrivingLicense1.search_nameList.clear();
+        DrivingLicense1.search_numberList.clear();
+        if(res.moveToFirst()) {
+            do {
+                if (res.getString(0).toLowerCase().contains(name.toLowerCase()) ||
+                        res.getString(1).toLowerCase().contains(name.toLowerCase())||
+                        res.getString(2).toLowerCase().contains(name.toLowerCase())||
+                        res.getString(3).toLowerCase().contains(name.toLowerCase())||
+                        res.getString(4).toLowerCase().contains(name.toLowerCase())||
+                        res.getString(5).toLowerCase().contains(name.toLowerCase())||
+                        res.getString(6).toLowerCase().contains(name.toLowerCase())) {
+
+                    DrivingLicense1.search_nameList.add(res.getString(0));
+                    DrivingLicense1.search_numberList.add(res.getString(1));
+
+                }
+            } while (res.moveToNext());
+        }
+
+    }
 }

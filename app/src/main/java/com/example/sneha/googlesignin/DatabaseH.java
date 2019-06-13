@@ -57,7 +57,7 @@ public class DatabaseH extends SQLiteOpenHelper {
     public Cursor GetTwoData(String named)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from " + TABLE_NAME+ " where name=?", new String[]{named});
+        Cursor res = db.rawQuery("select * from " + TABLE_NAME+ " where n1=?", new String[]{named});
         return res;
 
     }
@@ -71,12 +71,12 @@ public class DatabaseH extends SQLiteOpenHelper {
         if(res.moveToFirst()) {
             do {
 
-                if (res.getString(0).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
+                if (res.getString(6).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
                         res.getString(2).toLowerCase().contains(a.toLowerCase())|| res.getString(3).toLowerCase().contains(a.toLowerCase())
                         || res.getString(4).toLowerCase().contains(a.toLowerCase())||res.getString(7).toLowerCase().contains(a.toLowerCase())
                         || res.getString(5).toLowerCase().contains(a.toLowerCase())) {
 
-                    SocialSites1.a.add(res.getString(0));
+                    SocialSites1.a.add(res.getString(6));
                     SocialSites1.b.add(res.getString(1));
 
 
@@ -88,7 +88,7 @@ public class DatabaseH extends SQLiteOpenHelper {
     public Cursor GetTwoData(String a,String b)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("select * from " + TABLE_NAME+ " where name=? AND username=?", new String[]{a,b});
+        Cursor res = db.rawQuery("select * from " + TABLE_NAME+ " where n1=? AND username=?", new String[]{a,b});
         return res;
 
     }
@@ -104,7 +104,7 @@ public class DatabaseH extends SQLiteOpenHelper {
         contentValues.put(COL_7,n);
         contentValues.put(COL_8,holder);
 
-        db.update(TABLE_NAME,contentValues,"name= ? and username= ?",new String[] {a,b});
+        db.update(TABLE_NAME,contentValues,"n1= ? and username= ?",new String[] {a,b});
         return  true;
     }
 }

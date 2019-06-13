@@ -300,7 +300,6 @@ public class DrivingLicense extends AppCompatActivity {
 
             }
         });
-
     }
 
     // Date picking.....

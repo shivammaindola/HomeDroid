@@ -63,7 +63,8 @@ public class DatabaseSystem extends SQLiteOpenHelper {
             do {
 
                 if (res.getString(0).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
-                        res.getString(2).toLowerCase().contains(a.toLowerCase())|| res.getString(3).toLowerCase().contains(a.toLowerCase())) {
+                        res.getString(2).toLowerCase().contains(a.toLowerCase())|| res.getString(3).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(4).toLowerCase().contains(a.toLowerCase())) {
 
                     SystemLogins1.a.add(res.getString(0));
                     SystemLogins1.b.add(res.getString(1));

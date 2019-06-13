@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -84,26 +85,43 @@ public class DatabaseHelper4 extends SQLiteOpenHelper {
     }
     public void QUERYs(String a)
     {
+
+        LogoName logoName = new LogoName();
         SQLiteDatabase db = this.getWritableDatabase();
 
         Cursor res= db.rawQuery("select * from "+TABLE_NAME,null);
         BankingCard1.a.clear();
         BankingCard1.b.clear();
+        BankingCard1.c.clear();
+        BankingCard1.d.clear();
+        BankingCard1.e.clear();
+        BankingCard1.f.clear();
+        BankingCard1.g.clear();
         if(res.moveToFirst()) {
             do {
+                if (res.getString(0).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(1).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(2).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(3).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(4).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(5).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(6).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(7).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(8).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(9).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(13).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(14).toLowerCase().contains(a.toLowerCase())) {
 
-                if (res.getString(0).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
-                        res.getString(2).toLowerCase().contains(a.toLowerCase())|| formatMonthYear(res.getString(3)).toLowerCase().contains(a.toLowerCase())||
-                        res.getString(4).toLowerCase().contains(a.toLowerCase())|| res.getString(5).toLowerCase().contains(a.toLowerCase())
-                        || res.getString(6).toLowerCase().contains(a.toLowerCase())|| res.getString(7).toLowerCase().contains(a.toLowerCase())
-                        || res.getString(8).toLowerCase().contains(a.toLowerCase())|| res.getString(9).toLowerCase().contains(a.toLowerCase())
-                        ||  formatMonthYear(res.getString(13)).toLowerCase().contains(a.toLowerCase())
-                        ||  formatMonthYear(res.getString(14)).toLowerCase().contains(a.toLowerCase())) {
+                    String name = res.getString(0);
+                    String card = res.getString(9);
 
                     BankingCard1.a.add(res.getString(0));
-                    BankingCard1.b.add(res.getString(1));
-
-
+                    BankingCard1.b.add(res.getString(8));
+                    BankingCard1.c.add(res.getString(2));
+                    BankingCard1.d.add(res.getString(1));
+                    BankingCard1.e.add(res.getString(9));
+                    BankingCard1.f.add(logoName.getLogo(name));
+                    BankingCard1.g.add(logoName.getLogo(card));
                 }
             } while (res.moveToNext());
         }

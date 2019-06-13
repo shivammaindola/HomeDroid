@@ -13,7 +13,9 @@ import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -137,6 +139,54 @@ public class EditPan extends AppCompatActivity implements DatePickerDialog.OnDat
            // expiry1.setText(res.getString(4));
 
         }
+
+        number.addTextChangedListener(new TextWatcher() {
+
+            String text_before = "";
+            String text_after = "";
+            int count_text = 0;
+
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                text_before = number.getText().toString();
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                text_after = number.getText().toString();
+
+                // Increment count of text in number...
+                count_text = text_after.length();
+
+
+                if(count_text != 0) {
+
+                    if ((count_text <= 5 || count_text == 10) && Character.isDigit(text_after.charAt(text_after.length() - 1))) {
+
+                        number.setText(text_before);
+
+                    } else if (count_text > 5 && count_text < 10) {
+                        if (!Character.isDigit(text_after.charAt(text_after.length() - 1))) {
+
+                            number.setText(text_before);
+
+                        }
+                    } else if (count_text > 10) {
+
+                        number.setText(text_before);
+
+                    }
+                }
+
+                number.setSelection(number.length());
+            }
+        });
+
     }
     public  void UpdateData()
     {

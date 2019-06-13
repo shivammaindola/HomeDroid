@@ -44,7 +44,6 @@ public class DisplayDrivingLicense extends AppCompatActivity {
             default:
                 return false;
         }
-
     }
 
     @Override

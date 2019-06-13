@@ -14,7 +14,7 @@ public class DatabaseH1 extends  SQLiteOpenHelper {
     public static final String COL_3=" phone";
     public static final String COL_4=" recovery";
     //public static final String COL_5=" user";
-    public static final String COL_6=" owner";
+    public static final String COL_5=" owner";
     public DatabaseH1(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -38,7 +38,7 @@ public class DatabaseH1 extends  SQLiteOpenHelper {
         contentValues.put(COL_3,phone);
         contentValues.put(COL_4,recovery);
         //contentValues.put(COL_5,user);
-        contentValues.put(COL_6,owner);
+        contentValues.put(COL_5,owner);
 
         long result=db.insert(TABLE_NAME,null,contentValues);
         if(result==-1)
@@ -54,7 +54,7 @@ public class DatabaseH1 extends  SQLiteOpenHelper {
         contentValues.put(COL_3,phone);
         contentValues.put(COL_4,recovery);
         //contentValues.put(COL_5,user);
-        contentValues.put(COL_6,owner);
+        contentValues.put(COL_5,owner);
 
         db.update(TABLE_NAME, contentValues, "username = ?", new String[]{passnum});
         return true;
@@ -70,7 +70,7 @@ public class DatabaseH1 extends  SQLiteOpenHelper {
 // Have to remove here.....
                 if (res.getString(0).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
                         res.getString(2).toLowerCase().contains(a.toLowerCase())|| res.getString(3).toLowerCase().contains(a.toLowerCase())
-                ||res.getString(4).toLowerCase().contains(a.toLowerCase())|| res.getString(5).toLowerCase().contains(a.toLowerCase())) {
+                ||res.getString(4).toLowerCase().contains(a.toLowerCase())) {
 
                     Mail1.a.add(res.getString(0));
 

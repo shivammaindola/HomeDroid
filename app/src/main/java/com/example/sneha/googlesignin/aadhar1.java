@@ -67,6 +67,7 @@ public class aadhar1 extends AppCompatActivity implements DatePickerDialog.OnDat
         setContentView(R.layout.activity_aadhar1);
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
+
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.parseColor("#ffffff"));

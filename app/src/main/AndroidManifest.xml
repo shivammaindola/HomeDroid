@@ -1,249 +1,328 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sneha.googlesignin">
 
-    <manifest package="com.example.sneha.googlesignin" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
 
-    <uses-feature android:required="true" android:name="android.hardware.camera2"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/download"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SocialMediaName"
+            android:theme="@style/MyTheme"/>
+        <activity android:name=".ReminderPassport" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
 
-    <uses-permission android:name="android.permission.VIBRATE"/>
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
 
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
 
-    <application android:theme="@style/AppTheme" android:supportsRtl="true" android:roundIcon="@drawable/download" android:label="@string/app_name" android:icon="@drawable/download">
-
-    <meta-data
-        android:name="com.facebook.accountkit.ApplicationName"
-        android:value="@string/app_name" />
-    <meta-data
-        android:name="com.facebook.sdk.ApplicationId"
-        android:value="@string/FACEBOOK_APP_ID" />
-    <meta-data
-        android:name="com.facebook.accountkit.ClientToken"
-        android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
-
-    <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
-
-    <meta-data
-        android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
-        android:value="false" />
-
-    <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".LoginActivity" />
-
-    <activity android:name=".ActivityFront" android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_front"/>
-
-        <activity android:name=".OperatingSystemName"/>
-
-    <activity android:name=".DisplayDrivingLisence"/>
-
-    <activity android:name=".DisplayDrivingLicense"/>
-
-    <activity android:name=".DrivingLicense1" android:theme="@style/MyTheme" android:label="MyPA : Driving License"/>
-
-    <activity android:name=".EditDrivingLicense" android:label="MyPA : Driving License"/>
-
-    <activity android:name=".DrivingLicense" android:label="MyPA : Driving License"/>
-
-    <activity android:name=".DebitCredit"/>
-
-    <activity android:name=".CardName"/>
-
-    <activity android:name=".BankName"/>
-
-    <activity android:name=".UnderDevelopment"/>
-
-    <activity android:name=".EditSocial"/>
-
-
-    <activity android:name=".MainActivity" android:theme="@style/AppTheme">
-
-
-    <intent-filter>
-
-    <action android:name="android.intent.action.MAIN"/>
-
-    <action android:name="android.intent.action.VIEW"/>
-
-    <category android:name="android.intent.category.LAUNCHER"/>
-
-</intent-filter>
-
-</activity>
-
-
-    <receiver android:name=".AlarmReceiver" android:enabled="true">
-
-
-    <intent-filter>
-
-    <action android:name="com.example.sneha.googlesignin"/>
-
-</intent-filter>
-
-</receiver>
-
-    <activity android:name=".allap"/>
-
-    <activity android:name=".allsensitive"/>
-
-    <activity android:name=".Passport" android:theme="@style/MyTheme" android:label="MyPA : Passport"/>
-
-    <activity android:name=".voterid" android:label="MyPA : Voter ID"/>
-
-    <activity android:name=".pancard" android:label="MyPA : PAN Card"/>
-
-    <activity android:name=".DisplaySystemDetail" android:label="MyPA : System Login"/>
-
-    <activity android:name=".EditSystemLogins" android:label="MyPA : System Login"/>
-
-    <activity android:name=".SystemLogins1" android:theme="@style/MyTheme" android:label="MyPA : System Login"/>
-
-    <activity android:name=".SystemLogin" android:label="MyPA : System Login"/>
-
-    <activity android:name=".aadhar" android:label="MyPA : Aadhaar"/>
-
-    <activity android:name=".Banking_card" android:label="MyPA : Banking Card"/>
-
-    <activity android:name=".Account_details" android:label="MyPA : Bank Account"/>
-
-    <activity android:name=".Membership" android:label="MyPA : Membership"/>
-
-    <activity android:name=".Wifipass" android:label="MyPA : Wi-Fi "/>
-
-    <activity android:name=".Other" android:theme="@style/MyTheme" android:label="MyPA : Other"/>
-
-    <activity android:name=".Remainder"/>
-
-    <activity android:name=".PurchaseList" android:theme="@style/MyTheme"/>
-
-    <activity android:name=".Bussiness" android:theme="@style/MyTheme"/>
-
-    <activity android:name=".StickyNotes" android:theme="@style/MyTheme"/>
-
-    <activity android:name=".Evisiting"/>
-
-    <activity android:name=".TodoNew"/>
-
-    <activity android:name=".NoteEditorActivity" android:theme="@style/MyTheme"/>
-
-    <activity android:name=".NoteEditorActivity1" android:theme="@style/MyTheme"/>
-
-    <activity android:name=".SocialSites" android:label="MyPA : Social Networking"/>
-
-    <activity android:name=".Mail" android:label="MyPA : Email Account"/>
-
-    <activity android:name=".OnlineSites" android:label="MyPA : Online Account"/>
-
-    <activity android:name=".Site1"/>
-
-    <activity android:name=".StdCode"/>
-
-    <activity android:name=".BussinessContact"/>
-
-    <activity android:name=".Passport1" android:label="MyPA : Passport"/>
-
-    <activity android:name=".DislayPassportDetail" android:label="MyPA : Passport"/>
-
-    <activity android:name=".EditPassport" android:label="MyPA : Passport"/>
-
-    <activity android:name=".voterid1" android:theme="@style/MyTheme" android:label="MyPA : Voter ID"/>
-
-    <activity android:name=".DisplayVoterDetails" android:label="MyPA : Voter ID"/>
-
-    <activity android:name=".EditVoter" android:label="MyPA : Voter ID"/>
-
-    <activity android:name=".pancard1" android:theme="@style/MyTheme" android:label="MyPA : PAN Card"/>
-
-    <activity android:name=".DisplayPanDetails" android:label="MyPA : PAN Card"/>
-
-    <activity android:name=".EditPan" android:label="MyPA : PAN Card"/>
-
-    <activity android:name=".aadhar1" android:theme="@style/MyTheme" android:label="MyPA : Aadhaar"/>
-
-    <activity android:name=".DisplayAadharDetails" android:label="MyPA : Aadhaar"/>
-
-    <activity android:name=".EditAadhar" android:label="MyPA : Aadhaar"/>
-
-    <activity android:name=".membership1" android:theme="@style/MyTheme" android:label="MyPA : Membership"/>
-
-    <activity android:name=".DisplayMembershipDetails" android:label="MyPA : Membership"/>
-
-    <activity android:name=".EditMember" android:label="MyPA : Membership"/>
-
-    <activity android:name=".Wifipass1" android:theme="@style/MyTheme" android:label="MyPA : Wi-Fi"/>
-
-    <activity android:name=".DisplayWifi" android:label="MyPA : Wi-Fi"/>
-
-    <activity android:name=".EditWifi" android:label="MyPA : Wi-Fi"/>
-
-    <activity android:name=".SocialSites1" android:theme="@style/MyTheme" android:label="MyPA : Social Networking"/>
-
-    <activity android:name=".DisplaySocial" android:label="MyPA : Social Networking"/>
-
-    <activity android:name=".Mail1" android:theme="@style/MyTheme" android:label="MyPA : Email Account"/>
-
-    <activity android:name=".DisplayMailDetails" android:label="MyPA : Email Account"/>
-
-    <activity android:name=".EditMail" android:label="MyPA : Email Account"/>
-
-    <activity android:name=".OnlineSites1" android:theme="@style/MyTheme" android:label="MyPA : Online Account"/>
-
-    <activity android:name=".DisplayOnlineDetails" android:label="MyPA : Online Account"/>
-
-    <activity android:name=".EditOnline" android:label="MyPA : Online Account"/>
-
-    <activity android:name=".Insurance" android:label="MyPA : Insurance"/>
-
-    <activity android:name=".Insurance1" android:theme="@style/MyTheme" android:label="MyPA : Insurance"/>
-
-    <activity android:name=".DisplayInsurance" android:label="MyPA : Insurance"/>
-
-    <activity android:name=".EditInsurance" android:label="MyPA : Insurance"/>
-
-    <activity android:name=".BankingCard1" android:theme="@style/MyTheme" android:label="MyPA : Banking Card"/>
-
-    <activity android:name=".DisplayBanking" android:label="MyPA : Banking Card"/>
-
-    <activity android:name=".EditBanking" android:label="MyPA : Banking Card"/>
-
-    <activity android:name=".Account1" android:theme="@style/MyTheme" android:label="MyPA : Bank Account"/>
-
-    <activity android:name=".DisplayAccount" android:label="MyPA : Bank Account"/>
-
-    <activity android:name=".EditAccount" android:label="MyPA : Bank Account"/>
-
-    <activity android:name=".EditRemoteLogin" android:label="MyPA : Remote Login"/>
-
-    <activity android:name=".DisplayRemoteDetail" android:label="MyPA : Remote Login"/>
-
-    <activity android:name=".RemoteLogin" android:label="MyPA : Remote Login"/>
-
-    <activity android:name=".RemoteLogin1" android:theme="@style/MyTheme" android:label="MyPA : Remote Login"/>
-
-    <activity android:name=".NoteEditorActivity2"/>
-
-    <activity android:name=".RemainderHome"/>
-
-    <activity android:name=".ButtonPage1"/>
-
-    <activity android:name=".EditElectricity" android:label="MyPA : Electricity"/>
-
-    <activity android:name=".DisplayElectricity" android:label="MyPA : Electricity"/>
-
-    <activity android:name=".Electricity1" android:theme="@style/MyTheme" android:label="MyPA : Electricity"/>
-
-    <activity android:name=".DisplayGas" android:label="MyPA : Gas Connection"/>
-
-    <activity android:name=".Electricity" android:label="MyPA : Electricity"/>
-
-    <activity android:name=".EditGas" android:label="MyPA : Gas Connection"/>
-
-    <activity android:name=".Gas" android:label="MyPA : Gas Connection"/>
-
-    <activity android:name=".Gas1" android:theme="@style/MyTheme" android:label="MyPA : Gas Connection"/>
-
-</application>
+        <activity
+            android:name=".ActivityFront"
+            android:label="@string/title_activity_front"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OperatingSystemName"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".DisplayDrivingLicense" />
+        <activity
+            android:name=".DrivingLicense1"
+            android:label="MyPA : Driving License"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".EditDrivingLicense"
+            android:label="MyPA : Driving License" />
+        <activity
+            android:name=".DrivingLicense"
+            android:label="MyPA : Driving License" />
+        <activity android:name=".DebitCredit" />
+        <activity
+            android:name=".CardName"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".BankName"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".UnderDevelopment" />
+        <activity android:name=".EditSocial" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.example.sneha.googlesignin" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".allap" />
+        <activity
+            android:name=".allsensitive"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Passport"
+            android:label="MyPA : Passport"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".voterid"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name=".pancard"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name=".DisplaySystemDetail"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name=".EditSystemLogins"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name=".SystemLogins1"
+            android:label="MyPA : System Login"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".SystemLogin"
+            android:label="MyPA : System Login" />
+        <activity
+            android:name=".aadhar"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name=".Banking_card"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name=".Account_details"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name=".Membership"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name=".Wifipass"
+            android:label="MyPA : Wi-Fi " />
+        <activity
+            android:name=".Other"
+            android:label="MyPA : Other"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".Remainder" />
+        <activity
+            android:name=".PurchaseList"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".Bussiness"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".StickyNotes"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".Evisiting" />
+        <activity android:name=".TodoNew" />
+        <activity
+            android:name=".NoteEditorActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".NoteEditorActivity1"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".SocialSites"
+            android:label="MyPA : Social Networking" />
+        <activity
+            android:name=".Mail"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name=".OnlineSites"
+            android:label="MyPA : Online Account" />
+        <activity android:name=".Site1" />
+        <activity android:name=".StdCode" />
+        <activity android:name=".BussinessContact" />
+        <activity
+            android:name=".Passport1"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name=".DislayPassportDetail"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name=".EditPassport"
+            android:label="MyPA : Passport" />
+        <activity
+            android:name=".voterid1"
+            android:label="MyPA : Voter ID"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayVoterDetails"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name=".EditVoter"
+            android:label="MyPA : Voter ID" />
+        <activity
+            android:name=".pancard1"
+            android:label="MyPA : PAN Card"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayPanDetails"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name=".EditPan"
+            android:label="MyPA : PAN Card" />
+        <activity
+            android:name=".aadhar1"
+            android:label="MyPA : Aadhaar"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayAadharDetails"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name=".EditAadhar"
+            android:label="MyPA : Aadhaar" />
+        <activity
+            android:name=".membership1"
+            android:label="MyPA : Membership"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayMembershipDetails"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name=".EditMember"
+            android:label="MyPA : Membership" />
+        <activity
+            android:name=".Wifipass1"
+            android:label="MyPA : Wi-Fi"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayWifi"
+            android:label="MyPA : Wi-Fi" />
+        <activity
+            android:name=".EditWifi"
+            android:label="MyPA : Wi-Fi" />
+        <activity
+            android:name=".SocialSites1"
+            android:label="MyPA : Social Networking"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplaySocial"
+            android:label="MyPA : Social Networking" />
+        <activity
+            android:name=".Mail1"
+            android:label="MyPA : Email Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayMailDetails"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name=".EditMail"
+            android:label="MyPA : Email Account" />
+        <activity
+            android:name=".OnlineSites1"
+            android:label="MyPA : Online Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayOnlineDetails"
+            android:label="MyPA : Online Account" />
+        <activity
+            android:name=".EditOnline"
+            android:label="MyPA : Online Account" />
+        <activity
+            android:name=".Insurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name=".Insurance1"
+            android:label="MyPA : Insurance"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayInsurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name=".EditInsurance"
+            android:label="MyPA : Insurance" />
+        <activity
+            android:name=".BankingCard1"
+            android:label="MyPA : Banking Card"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayBanking"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name=".EditBanking"
+            android:label="MyPA : Banking Card" />
+        <activity
+            android:name=".Account1"
+            android:label="MyPA : Bank Account"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayAccount"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name=".EditAccount"
+            android:label="MyPA : Bank Account" />
+        <activity
+            android:name=".EditRemoteLogin"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name=".DisplayRemoteDetail"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name=".RemoteLogin"
+            android:label="MyPA : Remote Login" />
+        <activity
+            android:name=".RemoteLogin1"
+            android:label="MyPA : Remote Login"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".NoteEditorActivity2" />
+        <activity android:name=".RemainderHome" />
+        <activity android:name=".ButtonPage1" />
+        <activity
+            android:name=".EditElectricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name=".DisplayElectricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name=".Electricity1"
+            android:label="MyPA : Electricity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".DisplayGas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name=".Electricity"
+            android:label="MyPA : Electricity" />
+        <activity
+            android:name=".EditGas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name=".Gas"
+            android:label="MyPA : Gas Connection" />
+        <activity
+            android:name=".Gas1"
+            android:label="MyPA : Gas Connection"
+            android:theme="@style/MyTheme" />
+
+        <receiver android:name=".AlarmReceiverPassport" />
+    </application>
 
 </manifest>

@@ -68,14 +68,14 @@ public class DisplaySocial extends AppCompatActivity {
             return;
         }
         while (res.moveToNext()) {
-            t1.setText(res.getString(0));
+            t1.setText(res.getString(6));
             t2.setText(res.getString(1));
             t3.setText(res.getString(2));
             t4.setText(res.getString(3));
             t5.setText(res.getString(4));
             t6.setText(res.getString(5));
             t7.setText(res.getString(7));
-            socialname = res.getString(0);
+            socialname = res.getString(6);
             socialaddress = res.getString(1);
         }
     }

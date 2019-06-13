@@ -74,8 +74,11 @@ public class DatabaseHelper3 extends SQLiteOpenHelper {
         if(res.moveToFirst()) {
             do {
 
-                if (res.getString(0).toLowerCase().contains(a.toLowerCase()) || res.getString(1).toLowerCase().contains(a.toLowerCase())||
-                        res.getString(2).toLowerCase().contains(a.toLowerCase())|| res.getString(3).toLowerCase().contains(a.toLowerCase())) {
+                if (res.getString(0).toLowerCase().contains(a.toLowerCase()) ||
+                        res.getString(1).toLowerCase().replace(" ", "").contains(a.toLowerCase())||
+                        res.getString(2).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(3).toLowerCase().contains(a.toLowerCase())||
+                        res.getString(4).toLowerCase().contains(a.toLowerCase())) {
 
                     aadhar1.a.add(res.getString(0));
                     aadhar1.b.add(res.getString(1));

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -34,6 +35,11 @@ public class BankingCard1 extends AppCompatActivity {
     static ArrayList<Integer> cardTypeLogoList;
     static ArrayList<String> a;
     static ArrayList<String> b;
+    static ArrayList<String> c;
+    static ArrayList<String> d;
+    static ArrayList<String> e;
+    static ArrayList<Integer> f;
+    static ArrayList<Integer> g;
     DatabaseHelper4 db;
     LogoName logoName;
 
@@ -81,8 +87,13 @@ public class BankingCard1 extends AppCompatActivity {
         allList = findViewById(R.id.AllList);
 
         db = new DatabaseHelper4(this);
-        a=new ArrayList<>();
-        b=new ArrayList<>();
+        a = new ArrayList<>();
+        b = new ArrayList<>();
+        c = new ArrayList<>();
+        d = new ArrayList<>();
+        e = new ArrayList<>();
+        f = new ArrayList<>();
+        g = new ArrayList<>();
         banknamelist = new ArrayList<>();
         cardlist = new ArrayList<>();
         cardNumberlist = new ArrayList<>();
@@ -109,29 +120,30 @@ public class BankingCard1 extends AppCompatActivity {
         });
 
         //////////////////////////////////////////////////////////////////////////////////////////////
-//        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                return false;
-//            }
-//
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-//                if(newText!=NULL&&!newText.isEmpty())
-//                {
-//                    db.QUERYs(newText);
-//
-//                    adapterClass = new AdapterClassBanking(a, b, BankingCard1.this);
-//                    allList.setAdapter(adapterClass);
-//                    adapterClass.notifyDataSetChanged();
-//
-//                }
-//                else
-//                    setAdapter();
-//                return true;
-//            }
-//        });
+        searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if(newText!=NULL&&!newText.isEmpty())
+                {
+
+                    db.QUERYs(newText);
+
+                    adapterClass = new AdapterClassBanking(a, b, c, d, e, f, g,BankingCard1.this);
+                    allList.setAdapter(adapterClass);
+                    adapterClass.notifyDataSetChanged();
+                }
+                else
+                    setAdapter();
+                return true;
+            }
+        });
     ///////////////////////////////////////////////////////////////////////////////////////////////////
+
     }
     private void startNewActivity() {
         Intent intent = new Intent(BankingCard1.this, Banking_card.class);
