@@ -18,12 +18,16 @@
         android:theme="@style/AppTheme">
 
         <activity android:name=".RequestFeature"
-            android:parentActivityName=".HomeActivity"/>
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"/>
 
         <activity
             android:name=".SocialMediaName"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".ReminderPassport" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ReminderPassport"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="com.facebook.accountkit.ApplicationName"
@@ -41,38 +45,60 @@
             android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
             android:value="false" />
 
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ActivityFront"
             android:label="@string/title_activity_front"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".OperatingSystemName"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".DisplayDrivingLicense" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".DisplayDrivingLicense"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".DrivingLicense1"
             android:label="MyPA : Driving License"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".EditDrivingLicense"
-            android:label="MyPA : Driving License" />
+            android:label="MyPA : Driving License"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DrivingLicense"
-            android:label="MyPA : Driving License" />
-        <activity android:name=".DebitCredit" />
+            android:label="MyPA : Driving License"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".DebitCredit"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".CardName"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".BankName"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".UnderDevelopment" />
-        <activity android:name=".EditSocial" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".UnderDevelopment"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".EditSocial"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -89,243 +115,403 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".allap" />
+        <activity android:name=".allap"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".allsensitive"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Passport"
             android:label="MyPA : Passport"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".voterid"
-            android:label="MyPA : Voter ID" />
+            android:label="MyPA : Voter ID"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".pancard"
-            android:label="MyPA : PAN Card" />
+            android:label="MyPA : PAN Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplaySystemDetail"
-            android:label="MyPA : System Login" />
+            android:label="MyPA : System Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditSystemLogins"
-            android:label="MyPA : System Login" />
+            android:label="MyPA : System Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".SystemLogins1"
             android:label="MyPA : System Login"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".SystemLogin"
-            android:label="MyPA : System Login" />
+            android:label="MyPA : System Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".aadhar"
-            android:label="MyPA : Aadhaar" />
+            android:label="MyPA : Aadhaar"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Banking_card"
-            android:label="MyPA : Banking Card" />
+            android:label="MyPA : Banking Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Account_details"
-            android:label="MyPA : Bank Account" />
+            android:label="MyPA : Bank Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Membership"
-            android:label="MyPA : Membership" />
+            android:label="MyPA : Membership"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Wifipass"
-            android:label="MyPA : Wi-Fi " />
+            android:label="MyPA : Wi-Fi "
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Other"
             android:label="MyPA : Other"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".Remainder" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Remainder"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".PurchaseList"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Bussiness"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".StickyNotes"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".Evisiting" />
-        <activity android:name=".TodoNew" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Evisiting"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".TodoNew"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".NoteEditorActivity"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".NoteEditorActivity1"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".SocialSites"
-            android:label="MyPA : Social Networking" />
+            android:label="MyPA : Social Networking"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Mail"
-            android:label="MyPA : Email Account" />
+            android:label="MyPA : Email Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".OnlineSites"
-            android:label="MyPA : Online Account" />
-        <activity android:name=".Site1" />
-        <activity android:name=".StdCode" />
-        <activity android:name=".BussinessContact" />
+            android:label="MyPA : Online Account"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Site1"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".StdCode"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BussinessContact"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Passport1"
-            android:label="MyPA : Passport" />
+            android:label="MyPA : Passport"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DislayPassportDetail"
-            android:label="MyPA : Passport" />
+            android:label="MyPA : Passport"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditPassport"
-            android:label="MyPA : Passport" />
+            android:label="MyPA : Passport"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".voterid1"
             android:label="MyPA : Voter ID"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayVoterDetails"
-            android:label="MyPA : Voter ID" />
+            android:label="MyPA : Voter ID"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditVoter"
-            android:label="MyPA : Voter ID" />
+            android:label="MyPA : Voter ID"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".pancard1"
             android:label="MyPA : PAN Card"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayPanDetails"
-            android:label="MyPA : PAN Card" />
+            android:label="MyPA : PAN Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditPan"
-            android:label="MyPA : PAN Card" />
+            android:label="MyPA : PAN Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".aadhar1"
             android:label="MyPA : Aadhaar"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayAadharDetails"
-            android:label="MyPA : Aadhaar" />
+            android:label="MyPA : Aadhaar"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditAadhar"
-            android:label="MyPA : Aadhaar" />
+            android:label="MyPA : Aadhaar"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".membership1"
             android:label="MyPA : Membership"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayMembershipDetails"
-            android:label="MyPA : Membership" />
+            android:label="MyPA : Membership"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditMember"
-            android:label="MyPA : Membership" />
+            android:label="MyPA : Membership"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Wifipass1"
             android:label="MyPA : Wi-Fi"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayWifi"
-            android:label="MyPA : Wi-Fi" />
+            android:label="MyPA : Wi-Fi"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditWifi"
-            android:label="MyPA : Wi-Fi" />
+            android:label="MyPA : Wi-Fi"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".SocialSites1"
             android:label="MyPA : Social Networking"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplaySocial"
-            android:label="MyPA : Social Networking" />
+            android:label="MyPA : Social Networking"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Mail1"
             android:label="MyPA : Email Account"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayMailDetails"
-            android:label="MyPA : Email Account" />
+            android:label="MyPA : Email Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditMail"
-            android:label="MyPA : Email Account" />
+            android:label="MyPA : Email Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".OnlineSites1"
             android:label="MyPA : Online Account"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayOnlineDetails"
-            android:label="MyPA : Online Account" />
+            android:label="MyPA : Online Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditOnline"
-            android:label="MyPA : Online Account" />
+            android:label="MyPA : Online Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Insurance"
-            android:label="MyPA : Insurance" />
+            android:label="MyPA : Insurance"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Insurance1"
             android:label="MyPA : Insurance"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayInsurance"
-            android:label="MyPA : Insurance" />
+            android:label="MyPA : Insurance"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditInsurance"
-            android:label="MyPA : Insurance" />
+            android:label="MyPA : Insurance"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".BankingCard1"
             android:label="MyPA : Banking Card"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayBanking"
-            android:label="MyPA : Banking Card" />
+            android:label="MyPA : Banking Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditBanking"
-            android:label="MyPA : Banking Card" />
+            android:label="MyPA : Banking Card"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Account1"
             android:label="MyPA : Bank Account"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayAccount"
-            android:label="MyPA : Bank Account" />
+            android:label="MyPA : Bank Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditAccount"
-            android:label="MyPA : Bank Account" />
+            android:label="MyPA : Bank Account"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditRemoteLogin"
-            android:label="MyPA : Remote Login" />
+            android:label="MyPA : Remote Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayRemoteDetail"
-            android:label="MyPA : Remote Login" />
+            android:label="MyPA : Remote Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".RemoteLogin"
-            android:label="MyPA : Remote Login" />
+            android:label="MyPA : Remote Login"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".RemoteLogin1"
             android:label="MyPA : Remote Login"
-            android:theme="@style/MyTheme" />
-        <activity android:name=".NoteEditorActivity2" />
-        <activity android:name=".RemainderHome" />
-        <activity android:name=".ButtonPage1" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".NoteEditorActivity2"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".RemainderHome"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ButtonPage1"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditElectricity"
-            android:label="MyPA : Electricity" />
+            android:label="MyPA : Electricity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayElectricity"
-            android:label="MyPA : Electricity" />
+            android:label="MyPA : Electricity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Electricity1"
             android:label="MyPA : Electricity"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".DisplayGas"
-            android:label="MyPA : Gas Connection" />
+            android:label="MyPA : Gas Connection"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Electricity"
-            android:label="MyPA : Electricity" />
+            android:label="MyPA : Electricity"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".EditGas"
-            android:label="MyPA : Gas Connection" />
+            android:label="MyPA : Gas Connection"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Gas"
-            android:label="MyPA : Gas Connection" />
+            android:label="MyPA : Gas Connection"
+            android:screenOrientation="portrait"/>
+
         <activity
             android:name=".Gas1"
             android:label="MyPA : Gas Connection"
-            android:theme="@style/MyTheme" />
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait"/>
+
 
         <receiver android:name=".AlarmReceiverPassport" />
     </application>
