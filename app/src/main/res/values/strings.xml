@@ -12,6 +12,8 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name = "client_secret">V1OxHy68yDMKJgHp4Vr5mWgm</string>
+    <string name = "access_token_gmail">ya29.GlsnB-R0_oTvUqv3JfLlTPaViossgNBzqwxVBYOT_W4CWYG5K_NCCoPF__lPUytDJoD2Wiov369WY1jM6LQkrqSFlP3hKtDGV0dlTHl28UjwV-lNr8Rz1wn56FV0</string>
 
     <string name="title_notifications">Notifications</string>
 

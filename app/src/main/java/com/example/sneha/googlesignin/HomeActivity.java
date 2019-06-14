@@ -3,6 +3,7 @@ package com.example.sneha.googlesignin;
 import android.app.KeyguardManager;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Handler;
 import android.provider.Settings;
@@ -14,6 +15,8 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
@@ -37,6 +40,8 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class HomeActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
+    TextView like_fb;
+
     private FloatingActionButton floatingActionButton;
     private NavigationView nv;
     private DrawerLayout dl;
@@ -49,6 +54,49 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
     private static final int LOCK_REQUEST_CODE = 221;
     private static final int SECURITY_SETTING_REQUEST_CODE = 233;
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.navigation, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+
+            // Share app...
+            case R.id.share_app:
+                Toast.makeText(this, "Share App", Toast.LENGTH_SHORT).show();
+                break;
+
+            // Rate app...
+            case R.id.rate_app:
+                Toast.makeText(this, "Rate app", Toast.LENGTH_SHORT).show();
+                break;
+
+            // Like on facebook...
+            case R.id.like_fb:
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/homedroidtech/"));
+                startActivity(intent);
+
+                Toast.makeText(this, "Like on facebook", Toast.LENGTH_SHORT).show();
+                break;
+
+            // Follow on twitter...
+            case R.id.like_twitter:
+                Toast.makeText(this, "Follow on twitter", Toast.LENGTH_SHORT).show();
+                break;
+
+            // Follow on instagram...
+            case R.id.like_insta:
+                Toast.makeText(this, "Follow on Instagram", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +106,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         // Setting the font...
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
+
 
         // Asking for Lock password for phone....
         authenticateApp();
@@ -75,6 +124,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         label_heart.setTextColor(Color.RED);
 
          // Setting the drawer....
+        nv.setItemTextAppearance(R.style.Cambria);
         t = new ActionBarDrawerToggle(this, dl, R.string.open, R.string.close);
         dl.addDrawerListener(t);
         t.syncState();
@@ -117,6 +167,9 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
                     Toast.makeText(HomeActivity.this, "Settings", Toast.LENGTH_SHORT).show();
 
                 } else if (id == R.id.req) {        // request clicked..
+
+                    Intent intent = new Intent(HomeActivity.this, RequestFeature.class);
+                    startActivity(intent);
                     Toast.makeText(HomeActivity.this, "Request a feature", Toast.LENGTH_SHORT).show();
 
 
@@ -138,6 +191,10 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
                     Toast.makeText(HomeActivity.this, "Sign out", Toast.LENGTH_SHORT).show();
 
                     return true;
+                } else if(id == R.id.feedback){
+                    Toast.makeText(HomeActivity.this, "Faeedback", Toast.LENGTH_SHORT).show();
+                } else if(id == R.id.about_us){
+                    Toast.makeText(HomeActivity.this, "About us", Toast.LENGTH_SHORT).show();
                 }
 
                 return false;
@@ -145,6 +202,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
 
 
         });
+
     }
 
     // Function Authentication app...

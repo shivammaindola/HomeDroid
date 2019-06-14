@@ -16,8 +16,13 @@
         android:roundIcon="@drawable/download"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SocialMediaName"
-            android:theme="@style/MyTheme"/>
+
+        <activity android:name=".RequestFeature"
+            android:parentActivityName=".HomeActivity"/>
+
+        <activity
+            android:name=".SocialMediaName"
+            android:theme="@style/MyTheme" />
         <activity android:name=".ReminderPassport" />
 
         <meta-data
