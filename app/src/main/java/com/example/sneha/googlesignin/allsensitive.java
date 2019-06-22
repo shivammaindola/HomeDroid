@@ -17,7 +17,25 @@ import com.miguelcatalan.materialsearchview.MaterialSearchView;
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class allsensitive extends AppCompatActivity  {
-    CardView pass ,voter,pan,aadhar,banking,bankdetail,membership,wifipass,other,mail,social,online,insurance,remote,gas,elec,sys, driving;
+    CardView pass ,
+            voter,
+            pan,
+            aadhar,
+            banking,
+            bankdetail,
+            membership,
+            wifipass,
+            other,
+            mail,
+            social,
+            online,
+            insurance,
+            remote,
+            gas,
+            elec,
+            sys,
+            driving,
+            compony;
     MaterialSearchView searchView;
     LinearLayout container_all;
 
@@ -46,7 +64,7 @@ public class allsensitive extends AppCompatActivity  {
         toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
         toolbar.setTitleTextAppearance(this,R.style.Cambria);
 
-        Something();
+        ClickCards();
 
 
     }
@@ -63,7 +81,7 @@ public class allsensitive extends AppCompatActivity  {
         finish();
     }
 
-    public void Something(){
+    public void ClickCards(){
         pass=(CardView)findViewById(R.id.card1);
         voter=(CardView)findViewById(R.id.card2);
         pan=(CardView)findViewById(R.id.card3);
@@ -82,8 +100,8 @@ public class allsensitive extends AppCompatActivity  {
         sys=(CardView)findViewById(R.id.card16);
         remote=(CardView)findViewById(R.id.card17);
         driving = (CardView)findViewById(R.id.card18);
+        compony = (CardView) findViewById(R.id.card19);
         searchView = (MaterialSearchView) findViewById(R.id.search_view);
-        container_all = (LinearLayout) findViewById(R.id.container_all);
 
         pass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -207,10 +225,17 @@ public class allsensitive extends AppCompatActivity  {
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(allsensitive.this,Other.class));
+                startActivity(new Intent(allsensitive.this,Other1.class));
 
             }
         });
+        compony.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(allsensitive.this, ComponyProfile1.class));
+            }
+        });
+
     }
 }
 

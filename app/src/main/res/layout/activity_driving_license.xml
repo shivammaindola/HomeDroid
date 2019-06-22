@@ -123,13 +123,13 @@
                 android:imeOptions="actionNext"
                 android:inputType="date" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick_doi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -171,13 +171,13 @@
                 android:imeOptions="actionNext"
                 android:inputType="date" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick_validity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -212,13 +212,13 @@
                 android:imeOptions="actionNext"
                 android:inputType="date" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick_dob"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="PICK"
-                android:onClick="onClick_Pick"/>
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
 
         <LinearLayout

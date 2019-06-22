@@ -172,7 +172,7 @@ public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.On
         todolist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ButtonPage1.this,UnderDevelopment.class));
+                startActivity(new Intent(ButtonPage1.this,TodoNew.class));
             }
         });
         bussiness.setOnClickListener(new View.OnClickListener() {
@@ -202,13 +202,13 @@ public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.On
         goal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ButtonPage1.this,UnderDevelopment.class));
+                startActivity(new Intent(ButtonPage1.this,GoalSetting.class));
             }
         });
         purchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ButtonPage1.this,UnderDevelopment.class));
+                startActivity(new Intent(ButtonPage1.this,PurchaseList.class));
             }
         });
     }

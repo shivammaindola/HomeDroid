@@ -23,6 +23,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -34,7 +35,7 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 public class pancard extends AppCompatActivity  implements DatePickerDialog.OnDateSetListener {
     DatabaseHelper2 myDb;
     EditText name,father,dob,number;
-    Button pick;
+    ImageView pick;
 
     static final int DATEPICKER_DIALOG_ID=0;
 
@@ -98,7 +99,7 @@ public class pancard extends AppCompatActivity  implements DatePickerDialog.OnDa
         number=(EditText)findViewById(R.id.number);
         number.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
 
-        pick=(Button)findViewById(R.id.pick);
+        pick=(ImageView) findViewById(R.id.pick);
         adapterClass2 = new AdapterClassPan(pancard1.pancardnamelist, pancard1.pancardnumberlist, pancard.this);
 
         pick.setOnClickListener(new View.OnClickListener() {

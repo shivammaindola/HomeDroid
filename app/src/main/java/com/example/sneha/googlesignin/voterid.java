@@ -19,6 +19,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -33,7 +34,7 @@ public class voterid extends AppCompatActivity implements DatePickerDialog.OnDat
     EditText number,name,father,dob,address,issue;
     Button submit1,up1 ,view1;
 
-    Button btnAddData,pick,pick1;
+    ImageView btnAddData,pick,pick1;
     static final int DATEPICKER_DIALOG_ID=0;
     static final int DATEPICKER_DIALOG_ID1=1;
     // final  static int RQS_1=1;
@@ -87,8 +88,8 @@ public class voterid extends AppCompatActivity implements DatePickerDialog.OnDat
         dob=(EditText)findViewById(R.id.dob);
         address=(EditText)findViewById(R.id.address);
         issue=(EditText)findViewById(R.id.issue);
-        pick=(Button)findViewById(R.id.pick);
-        pick1=(Button)findViewById(R.id.pick1);
+        pick=(ImageView) findViewById(R.id.pick);
+        pick1=(ImageView) findViewById(R.id.pick1);
         // submit1=(Button)findViewById(R.id.submit1);
         //up1=(Button)findViewById(R.id.up1);
 

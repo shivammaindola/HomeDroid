@@ -1,11 +1,11 @@
 package com.example.sneha.googlesignin;
 
-import android.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -16,21 +16,20 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
+import me.anwarshahriar.calligrapher.Calligrapher;
+
 public class PurchaseList extends AppCompatActivity {
     ListView listView;
-    static ArrayAdapter arrayAdapter8;
-    static ArrayList<String> notes1 = new ArrayList<>();
-    SharedPreferences sharedPreferences5;
     Toolbar toolbar;
-
+    static ArrayAdapter arrayAdapter1;
+    static ArrayList <String> notes = new ArrayList<>();
+    SharedPreferences sharedPreferences1;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater = getMenuInflater();
@@ -54,24 +53,31 @@ public class PurchaseList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
-        setContentView(R.layout.activity_purchase_list);
+        setContentView(R.layout.activity_sticky_notes);
+        Calligrapher calligrapher=new Calligrapher(this);
+        calligrapher.setFont(this,"cambria.ttf",true);
         toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setTitleTextAppearance(this,R.style.Cambria);
+        sharedPreferences1 = getApplicationContext().getSharedPreferences("com.example.sneha.googlesignin", Context.MODE_PRIVATE);
+        HashSet<String> set1 = (HashSet<String>) sharedPreferences1.getStringSet("purchase",null);
 
-        sharedPreferences5 = getApplicationContext().getSharedPreferences("com.example.sneha.googlesignin", Context.MODE_PRIVATE);
-        HashSet<String> set = (HashSet<String>) sharedPreferences5.getStringSet("purchase",null);
+        listView = (ListView)findViewById(R.id.addnotes1);
 
-        listView = (ListView)findViewById(R.id.addnote);
-        if(set==null) {
+        if(set1 == null) {
 
-            notes1.add("Example list");
+            notes.add("Example notes.....");
+            //Toast.makeText(this, notes.get(0), Toast.LENGTH_SHORT).show();
+            set1 = new HashSet<String>(notes);
+            sharedPreferences1.edit().putStringSet("purchase",set1).apply();
+
         }
         else
         {
-            notes1 = new ArrayList(set);
+            notes = new ArrayList(set1);
         }
-        arrayAdapter8 = new ArrayAdapter(PurchaseList.this,android.R.layout.simple_list_item_1, notes1);
-        listView.setAdapter(arrayAdapter8);
+        arrayAdapter1 = new ArrayAdapter(PurchaseList.this,android.R.layout.simple_list_item_1, notes);
+        listView.setAdapter(arrayAdapter1);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -94,10 +100,10 @@ public class PurchaseList extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
-                                notes1.remove(position);
-                                arrayAdapter8.notifyDataSetChanged();
-                                HashSet<String> set = new HashSet<>(TodoNew.notes);
-                                sharedPreferences5.edit().putStringSet("purchase",set).apply();
+                                notes.remove(position);
+                                arrayAdapter1.notifyDataSetChanged();
+                                HashSet<String> set1 = new HashSet<>(PurchaseList.notes);
+                                sharedPreferences1.edit().putStringSet("purchase",set1).apply();
 
 
                             }
@@ -110,6 +116,5 @@ public class PurchaseList extends AppCompatActivity {
         });
 
     }
-
-    }
+}
 

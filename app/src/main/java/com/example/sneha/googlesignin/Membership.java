@@ -19,6 +19,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -34,7 +35,7 @@ public class Membership extends AppCompatActivity implements DatePickerDialog.On
     DatabaseHelper6 myDb;
 
 
-    Button btnAddData,pick;
+    ImageView btnAddData,pick;
     static final int DATEPICKER_DIALOG_ID=0;
     // final  static int RQS_1=1;
     int day,month,year;
@@ -88,7 +89,7 @@ public class Membership extends AppCompatActivity implements DatePickerDialog.On
         number=(EditText)findViewById(R.id.number);
         expiry=(EditText)findViewById(R.id.expiry);
         holder=findViewById(R.id.nameofholder);
-        pick=(Button)findViewById(R.id.pickmember);
+        pick=(ImageView)findViewById(R.id.pickmember);
 
 
         myDb = new DatabaseHelper6(this);

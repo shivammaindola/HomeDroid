@@ -63,6 +63,7 @@ public class StickyNotes extends AppCompatActivity {
         HashSet<String> set1 = (HashSet<String>) sharedPreferences1.getStringSet("sticky",null);
 
         listView = (ListView)findViewById(R.id.addnotes1);
+
         if(set1 == null) {
 
             notes.add("Example notes.....");

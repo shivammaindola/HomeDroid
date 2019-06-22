@@ -24,6 +24,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -38,7 +39,7 @@ public class EditPan extends AppCompatActivity implements DatePickerDialog.OnDat
 
     DatabaseHelper2 myDb;
     EditText name,father,dob,number;
-    Button pick1;
+    ImageView pick1;
     static final int DATEPICKER_DIALOG_ID2=0;
     int day,month,year;
     int dayFinal,monthFinal,yearFinal;
@@ -100,7 +101,7 @@ public class EditPan extends AppCompatActivity implements DatePickerDialog.OnDat
 
         //  expiry1 = (EditText)findViewById(R.id.editText_id11);
         //btnAddData1 = (Button)findViewById(R.id.button_add1);
-        pick1=(Button)findViewById(R.id.pick);
+        pick1=(ImageView)findViewById(R.id.pick);
        // pick11=(Button)findViewById(R.id.pickit1);
         myDb = new DatabaseHelper2(this);
         adapterClass1 = new AdapterClassPan(pancard1.pancardnamelist, pancard1.pancardnumberlist, EditPan.this);

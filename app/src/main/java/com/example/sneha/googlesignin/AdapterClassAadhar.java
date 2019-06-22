@@ -30,9 +30,6 @@ public class AdapterClassAadhar extends RecyclerView.Adapter<AdapterClassAadhar.
         this.context = context;
     }
 
-    AdapterClassAadhar() {
-
-    }
     public class SearchViewHolder extends RecyclerView.ViewHolder {
         ImageView logo,edit,delete;
         TextView namee, agee,userdetails,title;

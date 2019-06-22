@@ -107,11 +107,13 @@ android:elevation="12dp"
             android:layout_width="180dp"
             android:layout_height="wrap_content" />
 
-        <Button
+        <ImageView
             android:id="@+id/pickmember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pick" />
+            android:layout_weight="1"
+            app:srcCompat="@drawable/date_range" />
+
     </LinearLayout>
 
 </LinearLayout>

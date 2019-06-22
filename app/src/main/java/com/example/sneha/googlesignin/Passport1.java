@@ -57,7 +57,8 @@ public class Passport1 extends AppCompatActivity implements DatePickerDialog.OnD
     DataHelper myDb;
 
     EditText holdername, passnum, place, issue, expiry;
-    Button btnAddData, pick, pick1,image;
+    Button btnAddData,image;
+    ImageView pick, pick1;
     Button reminderButton;
     static final int DATEPICKER_DIALOG_ID = 0;
     static final int DATEPICKER_DIALOG_ID1 = 1;
@@ -120,8 +121,8 @@ public class Passport1 extends AppCompatActivity implements DatePickerDialog.OnD
         place = (EditText) findViewById(R.id.editText_place);
         issue = (EditText) findViewById(R.id.editText_id);
         expiry = (EditText) findViewById(R.id.editText_id1);
-        pick = (Button) findViewById(R.id.pick);
-        pick1 = (Button) findViewById(R.id.pick1);
+        pick = (ImageView) findViewById(R.id.pick);
+        pick1 = (ImageView) findViewById(R.id.pick1);
         reminderButton = (Button) findViewById(R.id.reminderButton);
         notificationHelper = new NotificationHelper(this);
 

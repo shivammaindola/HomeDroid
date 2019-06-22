@@ -42,7 +42,8 @@ public class EditBanking extends AppCompatActivity {
     EditText holder, cvv, number, mpin, phoneno, emailid, exptext, fromtext,atm;
     ImageView pass_show_cvv, pass_show_mpin, pass_show_pin;
     boolean pass_check_cvv = false, pass_check_mpin = false, pass_check_pin = false;
-    Button pick, pick2, bank, card;
+    Button bank, card;
+    ImageView pick, pick2;
     RadioButton debitradio, creditradio;
     RadioGroup rgroup;
     String passnum, a, b;
@@ -147,7 +148,7 @@ public class EditBanking extends AppCompatActivity {
         exptext = (EditText) findViewById(R.id.exptext);
         emailid = (EditText) findViewById(R.id.emailid);
         phoneno = (EditText) findViewById(R.id.phoneno);
-        pick = (Button) findViewById(R.id.pick);
+        pick = (ImageView) findViewById(R.id.pick);
         bank = (Button) findViewById(R.id.bank);
         card = (Button) findViewById(R.id.card);
         spinner = (Spinner) findViewById(R.id.spinner);

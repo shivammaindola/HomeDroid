@@ -52,11 +52,11 @@ Toolbar toolbar;
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 TodoNew.notes.set(noteId,String.valueOf(s));
-                TodoNew.arrayAdapter.notifyDataSetChanged();
+                TodoNew.arrayAdapter1.notifyDataSetChanged();
 
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("com.example.sneha.googlesignin", Context.MODE_PRIVATE);
                 HashSet<String> set = new HashSet<>(TodoNew.notes);
-                sharedPreferences.edit().putStringSet("notes",set).apply();
+                sharedPreferences.edit().putStringSet("todo",set).apply();
 
 
             }

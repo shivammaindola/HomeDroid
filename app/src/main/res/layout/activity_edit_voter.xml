@@ -111,24 +111,26 @@
             android:textSize="20sp" />
 
         <LinearLayout
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/dob"
-                android:imeOptions="actionNext"
-                android:singleLine="true"
                 android:layout_width="180dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
 
 
@@ -162,26 +164,27 @@
             android:textSize="20sp" />
 
 
-
         <LinearLayout
-            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp">
 
             <EditText
                 android:id="@+id/issue"
-                android:imeOptions="actionNext"
-                android:singleLine="true"
                 android:layout_width="180dp"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
 
     </LinearLayout>

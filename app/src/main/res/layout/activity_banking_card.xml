@@ -276,11 +276,13 @@
                 android:inputType="number"
                 android:singleLine="true" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pickfrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
         <LinearLayout
 
@@ -319,11 +321,13 @@
                 android:inputType="number"
                 android:singleLine="true" />
 
-            <Button
+            <ImageView
                 android:id="@+id/pick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick" />
+                android:layout_weight="1"
+                app:srcCompat="@drawable/date_range" />
+
         </LinearLayout>
         <LinearLayout
 

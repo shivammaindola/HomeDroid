@@ -30,6 +30,7 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.google.code.gson:gson:2.8.2'
     //implementation 'com.android:cuboidcirclebutton:1.0.5'
     //implementation 'com.cuboid:cuboidcirclebutton:1.0.3'
     implementation 'com.afollestad.material-dialogs:core:0.9.4.5'

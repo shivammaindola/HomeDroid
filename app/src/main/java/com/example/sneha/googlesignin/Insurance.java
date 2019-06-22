@@ -19,6 +19,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -36,7 +37,7 @@ public class Insurance extends AppCompatActivity implements DatePickerDialog.OnD
     int dayFinal, monthFinal, yearFinal;
     int key = 0;
     EditText name,duration,plan,policyname,number,due,premium,holder;
-    Button pick;
+    ImageView pick;
     Spinner s;
 
     AdatperClassInsurance  adapterClass2;
@@ -90,7 +91,7 @@ public class Insurance extends AppCompatActivity implements DatePickerDialog.OnD
         premium= (EditText) findViewById(R.id.premium);
         s=(Spinner)findViewById(R.id.frequency);
         due= (EditText) findViewById(R.id.due);
-        pick= (Button) findViewById(R.id.pick);
+        pick= (ImageView) findViewById(R.id.pick);
         holder=findViewById(R.id.holder);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.months, android.R.layout.simple_spinner_item);

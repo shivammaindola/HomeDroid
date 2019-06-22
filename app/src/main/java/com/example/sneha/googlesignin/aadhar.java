@@ -22,6 +22,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -38,7 +39,7 @@ public class aadhar extends AppCompatActivity implements DatePickerDialog.OnDate
     int dayFinal, monthFinal, yearFinal;
     int key = 0;
     EditText name, dob, address, number, phoneNumber;
-    Button pickaadhar;
+    ImageView pickaadhar;
     String p;
     //////////////////////
     int phoneLength;
@@ -100,6 +101,7 @@ public class aadhar extends AppCompatActivity implements DatePickerDialog.OnDate
     }
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -111,7 +113,7 @@ public class aadhar extends AppCompatActivity implements DatePickerDialog.OnDate
         dob = (EditText) findViewById(R.id.dob);
         address = (EditText) findViewById(R.id.address);
         number = (EditText) findViewById(R.id.number);
-        pickaadhar = (Button) findViewById(R.id.pickaadhar);
+        pickaadhar = (ImageView) findViewById(R.id.pickaadhar);
 
         //////////////////////////
         phoneNumber = (EditText) findViewById(R.id.phoneNumber);

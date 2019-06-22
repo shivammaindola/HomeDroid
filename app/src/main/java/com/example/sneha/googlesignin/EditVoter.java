@@ -21,6 +21,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -36,7 +37,7 @@ public class EditVoter extends AppCompatActivity implements DatePickerDialog.OnD
 
     DatabaseHelper1 myDb;
     EditText holdername1,passnum1,place1,issue1,expiry1,issue2;
-    Button btnAddData1,pick1,pick11;
+    ImageView btnAddData1,pick1,pick11;
     static final int DATEPICKER_DIALOG_ID2=0;
     static final int DATEPICKER_DIALOG_ID3=1;
     int day,month,year;
@@ -89,8 +90,8 @@ public class EditVoter extends AppCompatActivity implements DatePickerDialog.OnD
         expiry1 = (EditText)findViewById(R.id.address);
         issue2 = (EditText)findViewById(R.id.issue);
         //btnAddData1 = (Button)findViewById(R.id.button_add1);
-        pick1=(Button)findViewById(R.id.pick);
-        pick11=(Button)findViewById(R.id.pick1);
+        pick1=(ImageView)findViewById(R.id.pick);
+        pick11=(ImageView)findViewById(R.id.pick1);
         myDb = new DatabaseHelper1(this);
         adapterClass1 = new AdapterClassVoter(voterid1.voternumlist, voterid1.voternamelist, EditVoter.this);
         //UpdateData();

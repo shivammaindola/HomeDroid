@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteEditorActivity1"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <EditText
+        android:id="@+id/writehere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="30"
+        android:minLines="30"
+        android:hint="Enter the list from here"
+        android:gravity="top|left"
+        android:maxLines="50"
+        android:backgroundTint="#ffffff"/>
+
+</LinearLayout>

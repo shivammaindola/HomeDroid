@@ -1,5 +1,9 @@
 package com.example.sneha.googlesignin;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -10,35 +14,42 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import java.util.Collections;
 import java.util.HashSet;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class NoteEditorActivity2 extends AppCompatActivity {
     EditText editText;
-    int purchaseId;
+    int StickyId;
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+        setContentView(R.layout.activity_note_editor1);
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
-        setContentView(R.layout.activity_note_editor2);
+        toolbar=(Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setTitleTextAppearance(this,R.style.Cambria);
         editText = (EditText)findViewById(R.id.writehere);
         Intent intent = getIntent();
-        toolbar=(Toolbar)findViewById(R.id.toolbar);
-        purchaseId = intent.getIntExtra("purchaseId",-1);
+        StickyId = intent.getIntExtra("PurchaseId",-1);
 
-        if(purchaseId!=(-1))
+        if(StickyId!=(-1))
         {
-            editText.setText(PurchaseList.notes1.get((purchaseId)));
+            editText.setText(PurchaseList.notes.get((StickyId)));
+            Toast.makeText(this, String.valueOf(StickyId), Toast.LENGTH_SHORT).show();
         }
         else
         {
-            PurchaseList.notes1.add("");
-            purchaseId=PurchaseList.notes1.size()-1;
+            PurchaseList.notes.add("");
+            StickyId=PurchaseList.notes.size()-1;
+            Toast.makeText(this, String.valueOf(StickyId), Toast.LENGTH_SHORT).show();
         }
 
         editText.addTextChangedListener(new TextWatcher() {
@@ -47,14 +58,14 @@ public class NoteEditorActivity2 extends AppCompatActivity {
             }
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                PurchaseList.notes1.set(purchaseId,String.valueOf(s));
-                PurchaseList.arrayAdapter8.notifyDataSetChanged();
+                if(!editText.equals("")){
+                    PurchaseList.notes.set(StickyId,String.valueOf(s));
+                    PurchaseList.arrayAdapter1.notifyDataSetChanged();
 
-                SharedPreferences sharedPreferences5 = getApplicationContext().getSharedPreferences("com.example.sneha.googlesignin", Context.MODE_PRIVATE);
-                HashSet<String> set = new HashSet<>(TodoNew.notes);
-                sharedPreferences5.edit().putStringSet("purchase",set).apply();
-
-
+                    SharedPreferences sharedPreferences1 = getApplicationContext().getSharedPreferences("com.example.sneha.googlesignin", Context.MODE_PRIVATE);
+                    HashSet<String> set1 = new HashSet<>(PurchaseList.notes);
+                    sharedPreferences1.edit().putStringSet("purchase",set1).apply();
+                }
             }
 
             @Override
@@ -64,3 +75,4 @@ public class NoteEditorActivity2 extends AppCompatActivity {
         });
     }
 }
+

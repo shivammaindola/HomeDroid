@@ -21,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -34,7 +35,7 @@ public class EditInsurance extends AppCompatActivity implements DatePickerDialog
 
     DatabaseInsurance myDb;
     EditText name,duration,plan,policyname,number,due,premium,holder;
-    Button pick;
+    ImageView pick;
     Spinner s;
 
     static final int DATEPICKER_DIALOG_ID2=0;
@@ -92,7 +93,7 @@ String name1,number1;
         premium= (EditText) findViewById(R.id.premium);
         s=(Spinner)findViewById(R.id.frequency);
         due= (EditText) findViewById(R.id.due);
-        pick= (Button) findViewById(R.id.pick);
+        pick= (ImageView) findViewById(R.id.pick);
         holder=findViewById(R.id.holder);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,

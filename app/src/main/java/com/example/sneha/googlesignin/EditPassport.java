@@ -21,6 +21,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.text.ParseException;
@@ -36,7 +37,7 @@ public class EditPassport extends AppCompatActivity implements DatePickerDialog.
 
     DataHelper myDb;
     EditText holdername1, passnum1, place1, issue1, expiry1;
-    Button btnAddData1, pick1, pick11;
+    ImageView btnAddData1, pick1, pick11;
     static final int DATEPICKER_DIALOG_ID2 = 0;
     static final int DATEPICKER_DIALOG_ID3 = 1;
     int day, month, year;
@@ -91,8 +92,8 @@ public class EditPassport extends AppCompatActivity implements DatePickerDialog.
         place1 = (EditText) findViewById(R.id.editText_place);
         issue1 = (EditText) findViewById(R.id.editText_id);
         expiry1 = (EditText) findViewById(R.id.editText_id1);
-        pick1 = (Button) findViewById(R.id.pick);
-        pick11 = (Button) findViewById(R.id.pick1);
+        pick1 = (ImageView) findViewById(R.id.pick);
+        pick11 = (ImageView) findViewById(R.id.pick1);
         myDb = new DataHelper(this);
         adapterClass1 = new AdapterClass(Passport.passportnamelist, Passport.passportnumlist, EditPassport.this);
         //UpdateData();
