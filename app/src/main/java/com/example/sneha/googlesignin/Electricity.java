@@ -42,7 +42,7 @@ public class Electricity extends AppCompatActivity {
                     name.setError("Enter Name");
                 }
                 else if (!(email.getText().toString().trim().equalsIgnoreCase(""))) {
-                    if (!email.getText().toString().contains("@")) {
+                    if (!email.getText().toString().contains("@") || !email.getText().toString().contains(".")) {
                         email.setError("Invalid Email ID");
                     } else {
                         AddData();

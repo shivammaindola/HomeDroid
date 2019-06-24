@@ -47,7 +47,7 @@ public class EditMail extends AppCompatActivity {
                     mail.setError("Enter Email ID");
                 } else if (pass.getText().toString().trim().equalsIgnoreCase("")) {
                     pass.setError("Enter Password");
-                } else if (!mail.getText().toString().contains("@")) {
+                } else if (!mail.getText().toString().contains("@") && !mail.getText().toString().contains(".")) {
                     mail.setError("Invalid Email ID");
                 }
 //                else if (user.getText().toString().trim().equalsIgnoreCase("")) {
@@ -57,7 +57,7 @@ public class EditMail extends AppCompatActivity {
                     owner.setError("Enter Owner Name");
                 }
                 else if(!(recovery.getText().toString().trim().equalsIgnoreCase(""))){
-                    if (!recovery.getText().toString().contains("@")) {
+                    if (!recovery.getText().toString().contains("@") || !recovery.getText().toString().contains(".")) {
                         recovery.setError("Invalid Email ID");
                     }
                     else {

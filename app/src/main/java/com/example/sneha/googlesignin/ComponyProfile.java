@@ -10,8 +10,10 @@ import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.InputFilter;
 import android.text.InputType;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -85,15 +87,15 @@ public class ComponyProfile extends AppCompatActivity {
                     nameVenture.setError("Enter Name of Venture");
                 }else if(numDirector.getText().toString().trim().equalsIgnoreCase("")){
                     numDirector.setError("Enter Number of Directors");
-                }else if(!(vpa.getText().toString().trim().equalsIgnoreCase(""))){
-                   if(!vpa.getText().toString().contains("@")) {
+                }else if(!(vpa.getText().toString().trim().equalsIgnoreCase("")) && !vpa.getText().toString().contains("@")){
+
                        vpa.setError("Incorrect VPA");
-                   }
-                }else if(!(mailId.getText().toString().trim().equalsIgnoreCase("")) && !mailId.getText().toString().contains("@") && !mailId.getText().toString().contains("@")){
+
+                }else if(!(mailId.getText().toString().trim().equalsIgnoreCase("")) && (!mailId.getText().toString().contains(".") || !mailId.getText().toString().contains("@"))){
 
                     mailId.setError("Incorrent Email");
 
-                }else if(!(emailId.getText().toString().trim().equalsIgnoreCase(""))&& !emailId.getText().toString().contains("@") && !emailId.getText().toString().contains("@")){
+                }else if(!(emailId.getText().toString().trim().equalsIgnoreCase(""))&& (!emailId.getText().toString().contains(".") || !emailId.getText().toString().contains("@"))){
 
                     emailId.setError("Incorrent Email");
 
@@ -106,7 +108,9 @@ public class ComponyProfile extends AppCompatActivity {
                     tan.setError("Incorrect TAN");
 
                 }else if(!(gstinNumber.getText().toString().trim().equals("")) && gstinNumber.getText().toString().length() != 15){
-                        gstinNumber.setError("Incorrect GSTIN Number");
+
+                    gstinNumber.setError("Incorrect GSTIN Number");
+
                 }else if(!cin.getText().toString().equals("") && cin.getText().toString().length() != 21){
                     cin.setError("Incorrect CIN");
                 }
@@ -251,6 +255,11 @@ public class ComponyProfile extends AppCompatActivity {
         directorId = new ArrayList<>();
         directorNameList = new ArrayList<>();
         directorIdList = new ArrayList<>();
+
+        // Always in caps..
+        cin.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+        pan.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
+        tan.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
 
         // Adding Director names field accoring to the number in "Number of Director" in Form...
         numDirector.addTextChangedListener(new TextWatcher() {
@@ -430,11 +439,11 @@ public class ComponyProfile extends AppCompatActivity {
 
                 if(count_text != 0) {
 
-                    if ((count_text <= 5 || count_text == 10) && Character.isDigit(text_after.charAt(text_after.length() - 1))) {
+                    if ((count_text <= 4 || count_text == 10) && Character.isDigit(text_after.charAt(text_after.length() - 1))) {
 
                         tan.setText(text_before);
 
-                    } else if (count_text > 5 && count_text < 10) {
+                    } else if (count_text > 4 && count_text < 10) {
                         if (!Character.isDigit(text_after.charAt(text_after.length() - 1))) {
 
                             tan.setText(text_before);
@@ -527,9 +536,12 @@ public class ComponyProfile extends AppCompatActivity {
                 count_text = text_after.length();
 
                 if(count_text != 0){
+                    if(count_text == 1 && (text_after.charAt(0) != 'L' && text_after.charAt(0) != 'U')){
 
-                    // Portion which should bw Character...
-                    if((count_text == 1 || (count_text > 6 && count_text < 9) || (count_text>12 && count_text<16))
+                        cin.setText(text_before);
+
+                    }// Portion which should bw Character...
+                    else if((count_text == 1 || (count_text > 6 && count_text < 9) || (count_text>12 && count_text<16))
                             && Character.isDigit(text_after.charAt(text_after.length()-1))){
 
                         cin.setText(text_before);
@@ -537,6 +549,10 @@ public class ComponyProfile extends AppCompatActivity {
                     // Portion which should be digits...
                     }else if(((count_text > 1 && count_text < 7) || (count_text >=9 && count_text < 13) || count_text >=16)
                             && !Character.isDigit(text_after.charAt(text_after.length() - 1))){
+
+                        cin.setText(text_before);
+
+                    }else if (count_text > 21) {
 
                         cin.setText(text_before);
 
@@ -574,7 +590,7 @@ public class ComponyProfile extends AppCompatActivity {
                 }
 
                 // Setting the date..
-                doi.setText(date);
+                dob.setText(date);
             }
         };
 
@@ -604,7 +620,7 @@ public class ComponyProfile extends AppCompatActivity {
                 }
 
                 // Setting the date..
-                dob.setText(date);
+                doi.setText(date);
             }
         };
 

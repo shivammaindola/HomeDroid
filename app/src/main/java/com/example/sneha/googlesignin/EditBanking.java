@@ -101,7 +101,7 @@ public class EditBanking extends AppCompatActivity {
                     atm.setError("Enter PIN");
                 }
                 else if (!(emailid.getText().toString().trim().equalsIgnoreCase(""))) {
-                    if (!emailid.getText().toString().contains("@"))
+                    if (!emailid.getText().toString().contains("@") || !emailid.getText().toString().contains("."))
                         emailid.setError("Invalid Email ID");
                     else {
 

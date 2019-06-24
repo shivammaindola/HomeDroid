@@ -57,7 +57,7 @@ public class SocialSites extends AppCompatActivity {
                 } else if (holder.getText().toString().trim().equalsIgnoreCase(""))
                     holder.setError("Enter Owner Name");
                 else if (!(recovery.getText().toString().trim().equalsIgnoreCase(""))) {
-                    if (!recovery.getText().toString().contains("@")) {
+                    if (!recovery.getText().toString().contains("@") || !recovery.getText().toString().contains(".")) {
                         recovery.setError("Invalid Email ID");
                         Toast.makeText(this, "@", Toast.LENGTH_SHORT).show();
                     } else {

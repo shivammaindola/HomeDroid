@@ -96,7 +96,7 @@ public class Banking_card extends AppCompatActivity {
                 } else if (atm.getText().toString().equalsIgnoreCase("")) {
                     atm.setError("Enter PIN");
                 } else if (!(emailid.getText().toString().trim().equalsIgnoreCase(""))) {
-                    if (!emailid.getText().toString().contains("@"))
+                    if (!emailid.getText().toString().contains("@") || !emailid.getText().toString().contains("."))
                         emailid.setError("Invalid Email ID");
                     else {
 
