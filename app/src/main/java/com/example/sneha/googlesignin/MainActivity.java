@@ -11,11 +11,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
+import com.example.sneha.googlesignin.Activity.LoginActivity;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                     // User is signed in
                     // you could place other firebase code
                     ////////////////////////////////////////////////////////////////////////////////////
-                    startActivity(new Intent(MainActivity.this,HomeActivity.class));
+                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
 //                    startActivity(new Intent(MainActivity.this,ActivityFront.class));
                     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     private void gotoProfile(){
         /////////////////////////////////////////////////////////////////////////////////////
-        Intent intent= new Intent(MainActivity.this,LoginActivity.class);
+        Intent intent= new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
 //        Intent intent = new Intent(MainActivity.this, ActivityFront.class);
         ////////////////////////////////////////////////////////////////////////////////////

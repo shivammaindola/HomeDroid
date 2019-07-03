@@ -1,42 +1,36 @@
 package com.example.sneha.googlesignin;
 
-import android.app.KeyguardManager;
 import android.content.Intent;
-import android.graphics.Color;
-import android.os.Build;
-import android.os.Handler;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.example.sneha.googlesignin.Activity.GoalSetting;
+import com.example.sneha.googlesignin.Activity.PurchaseList;
+import com.example.sneha.googlesignin.Activity.RemainderHome;
+import com.example.sneha.googlesignin.Activity.StickyNotes;
+import com.example.sneha.googlesignin.Activity.TodoNew;
+import com.example.sneha.googlesignin.Activity.UnderDevelopment;
+import com.example.sneha.googlesignin.Activity.allsensitive;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.common.api.OptionalPendingResult;
-import com.google.android.gms.common.api.ResultCallback;
-import com.google.android.gms.common.api.Status;
-import com.google.firebase.auth.FirebaseAuth;
 
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     CardView sesitive,reminder,todolist,purchase,visiting,sticky,recharge,debit,bussiness,stdcode,goal;
-
+    private Button mLevelTwoButton;
+    private InterstitialAd mInterstitialAd;
+    private TextView mLevelTextView;
+    private AdView mBannerAd;
 
     /////////////////////////////////////////////////////////////////////////////////////////
 //    private DrawerLayout dl;
@@ -61,6 +55,9 @@ public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.On
         setContentView(R.layout.activity_button_page1);
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
+
+        //mBannerAd = (AdView) findViewById(R.id.banner_AdView);
+        //showBannerAd();
 
         ////////////////////////////
 //        authenticateApp();
@@ -213,6 +210,15 @@ public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.On
         });
     }
 
+    private void showBannerAd() {
+
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice("754DB6521943676637AE86202C5ACE52")
+                .build();
+        mBannerAd.loadAd(adRequest);
+
+    }
+
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //    @Override
 //    protected void onStart() {
@@ -256,7 +262,7 @@ public class ButtonPage1 extends AppCompatActivity implements GoogleApiClient.On
 
     private void gotoMainActivity(){
 
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }

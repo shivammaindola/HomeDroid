@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.support.annotation.NonNull;
@@ -13,8 +14,6 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -25,6 +24,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.sneha.googlesignin.Activity.RequestFeature;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -41,6 +42,7 @@ import me.anwarshahriar.calligrapher.Calligrapher;
 public class HomeActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     TextView like_fb;
+    private InterstitialAd interstitial;
 
     private FloatingActionButton floatingActionButton;
     private NavigationView nv;
@@ -103,7 +105,41 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setContentView(R.layout.activity_home);
 
-        // Setting the font...
+        // Initialize the Mobile Ads SDK
+       /* //MobileAds.initialize(this, getString(R.string.admob_app_id));
+       // AdRequest adIRequest = new AdRequest.Builder().build();
+
+        // Prepare the Interstitial Ad Activity
+        //interstitial = new InterstitialAd(HomeActivity.this);
+
+        // Insert the Ad Unit ID
+        interstitial.setAdUnitId(getString(R.string.ad_id_interstitial));
+
+        // Interstitial Ad load Request
+        interstitial.loadAd(adIRequest);
+
+        // Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener()
+        {
+            public void onAdLoaded()
+            {
+                // Call displayInterstitial() function when the Ad loads
+                displayInterstitial();
+            }
+        });
+    }
+
+    public void displayInterstitial()
+    {
+        // If Interstitial Ads are loaded then show else show nothing.
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
+
+        */
+
+
+    // Setting the font...
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"cambria.ttf",true);
 
@@ -290,7 +326,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.O
     // Function to go to the main activity....
     private void gotoMainActivity(){
 
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
